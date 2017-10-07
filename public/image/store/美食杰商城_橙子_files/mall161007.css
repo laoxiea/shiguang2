@@ -1,0 +1,970 @@
+body{background:#f6f6f6;font-family: helvetica,Microsoft Yahei;font-weight:100;}
+.main{width:100%;position:relative;background:#f6f6f6;}
+
+/*é€šç”¨*/
+
+.h94{height:94px;}
+.h50{height:50px;}
+.h30{height:30px;}
+.mt10{margin-top:10px;}
+a:active{}
+a{-webkit-tap-highlight-color:rgba(255,0,0,0);} 
+input:focus {outline: none;background: none;outline-width: 0px;-webkit-tap-highlight-color: rgba(255,255,255,0);}
+input, select, textarea {-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-appearance: none;border: 0;border-radius: 0;}
+strong{font-weight:100;}
+
+
+
+/*é¡¶éƒ¨*/
+
+.malltop{height:30px;width:100%;}
+.malltop_c{background:#fb6a4d;position:fixed;top:0px;left:0px;width:100%;z-index:5000;height:30px;font-size:0px;}
+.malltop_c .tab{height:30px;font-size:13px;color:rgba(255,2555,255,0.8);width:27%;display:inline-block;vertical-align:top;line-height:30px;text-align:center;box-sizing:border-box;border-left:1px solid rgba(255,255,255,0.1);}
+.malltop_c .tab:first-child{border-left:0px;}
+
+.malltop_c .tab.current{font-size:15px;color:#fff;}
+
+.malltop_c .search{height:30px;width:19%;display:inline-block;vertical-align:top;text-align:center;}
+.malltop_c .search img{display:block;margin:0px auto;height:30px;}
+
+
+
+
+.msearchtopw{height:44px;width:100%;}
+.msearchtop{width:100%;height:44px;position:fixed;left:0px;top:0px;z-index:1000;background:#fff;padding:0px 10px 0px 44px;box-sizing:border-box;}
+.msearchtop .back{display:block;position:absolute;left:0px;top:0px;height:44px;width:44px;}
+.msearchtop .back img{display:block;height:100%;width:100%;}
+.msearchtop input[type=search]{width:100%;height:30px;background:#f5f5f5;border:0px;border-radius:4px;margin-top:7px;padding:0px 8px;box-sizing:border-box;font-size:14px;}
+
+
+.mall_whitetop{width:100%;height:44px;}
+.mall_whitetopc{width:100%;height:44px;background:#fff;position:fixed;left:0px;top:0px;z-index: 110;}
+.mall_whitetopc:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.mall_whitetopc h1{line-height:44px;color:#333;font-size:18px;text-align:center;font-weight:100;}
+.mall_whitetopc .back{display:block;position:absolute;left:0px;top:0px;height:44px;width:44px;}
+.mall_whitetopc .back img{display:block;height:100%;width:100%;}
+
+.mall_whitetopc .rightbtn_word{display:inline-block;vertical-align:top;position:absolute;right:0px;top:0px;height:44px;padding:0px 10px;font-size:16px;color:#666;line-height:44px;}
+.mall_whitetopc .rightbtn_red{color:#ff4c39;}
+
+.mi_searchicon{width:44px;height:44px;position:absolute;left:0px;top:0px;background:url(http://site.meishij.net/p2/20161019/20161019205205_408.png) center /44px 44px no-repeat;}
+.mi_searchicon:active{background-color:#f3f3f3;}
+.mi_mesicon{width:44px;height:44px;position:absolute;right:0px;top:0px;background:url(http://site.meishij.net/p2/20161019/20161019205206_232.png) center /44px 44px no-repeat;}
+.mi_mesicon:active{background-color:#f3f3f3;}
+.mi_itoptab{margin:0px 44px;text-align:center;font-size:0px;}
+.mi_itoptab a{height:44px;width:72px;display:inline-block;vertical-align:top;text-align:center;font-size:16px;line-height:44px;color:#333;}
+.mi_itoptab a:active{background:#f3f3f3;}
+.mi_itoptab a.current strong{display:inline-block;vertical-align:top;height:30px;margin-top:7px;border-bottom:2px solid #ff4c39;line-height:30px;}
+
+.mall_transparenttop{width:100%;height:44px;position:absolute;left:0px;top:0px;z-index:100;}
+.mall_transparenttopc{width:100%;height:44px;}
+.mall_transparenttopc .back{display:block;position:absolute;left:0px;top:0px;height:44px;width:44px;}
+.mall_transparenttopc .back img{display:block;height:100%;width:100%;}
+
+.msearchtop_tipsw{width:100%;background:#fff;position:absolute;left:0px;top:44px;max-height:240px;overflow:scroll;display:none;box-shadow:0px 4px 4px rgba(0,0,0,0.2);padding-bottom:10px;}
+.msearchtop_tipsw a{height:40px;line-height:40px;display:block;color:#666;width:100%;padding:0px 10px;box-sizing:border-box;overflow: hidden;overflow-y: auto;-webkit-overflow-scrolling: touch;position:relative;font-size:14px;}
+.msearchtop_tipsw a:before{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;top:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.msearchtop_tipsw a:active{background:#f3f3f3;}
+
+
+
+
+
+/*åº•éƒ¨*/
+
+.bottombar{height:50px;width:100%;background:#fefefe;position:fixed;bottom:0px;left:0px;z-index:1000;border-top:1px solid #eee;font-size:0px;}
+.bottombaritem{display:inline-block;vertical-align:top;height:50px;font-size:10px;color:#868686 ;line-height:14px;}
+.bottombaritem_current{color:#ff4c39;}
+
+.backtopbtn{position:absolute;left:0px;top:100%;height:100%;width:100%;background:#ff4c39;color:#fff;transition:all ease 0.3s;font-size:10px;line-height:14px;}
+
+
+.bottombaritem_20w{width:20%;display:inline-block;vertical-align:top;height:50px;text-align:center;position:relative;overflow:hidden;}
+
+.bottombaritem_25w{width:25%;display:inline-block;vertical-align:top;height:50px;text-align:center;position:relative;overflow:hidden;}
+.bottombaritem_33w{width:33.333333333%;display:inline-block;vertical-align:top;height:50px;text-align:center;position:relative;overflow:hidden;}
+.bottombaritem_50w{width:50%;display:inline-block;vertical-align:top;height:50px;text-align:center;position:relative;overflow:hidden;}
+.bottombaritemw img{display:block;margin:3px auto 0px;height:30px;width:30px;}
+
+.sidecart{height:45px;width:45px;position:fixed;right:10px;bottom:60px;display:block;background:url(http://site.meishij.net/p2/20161008/20161008105235_348.png) center /100% 100% no-repeat;}
+.sidecart .num{height:13px;line-height:13px;font-size:9px;color:#fff;padding:0px 4px;position:absolute;right:0px;top:0px;display:inline-block;background:#ff4c39;border-radius:7px;}
+
+.sidebacktop{height:45px;width:45px;position:fixed;right:10px;bottom:60px;display:block;background:url(http://site.meishij.net/p2/20161008/20161008172647_674.png) center /100% 100% no-repeat;display:none;}
+
+.sidebtns{width:46px;position:fixed;right:10px;bottom:115px;border-radius:2px;overflow:hidden;background:rgba(255,255,255,0.9);z-index:500;display:none;}
+.sidebtns:after{content:" ";border:1px solid #ff4c39;width:200%;height:200%;border-radius:4px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.sidebtns span{display:block;}
+.sidebtns span em{display:block;line-height:14px;text-align:center;color:#333;font-size:12px;padding:8px 0px;position:relative;z-index:501;}
+.sidebtns span:active{background:#f3f3f3;}
+.sidebtns span.current em{background:#ff4c39;color:#fff;}
+
+
+
+/*é¦–é¡µ*/
+
+
+.mi_c1{width:100%;padding-top:83.2%;position:relative;overflow:hidden;margin-bottom:7px;}
+.mi_c1_c{width:100%;height:100%;position:absolute;overflow:hidden;left:0px;top:0px;background:#eee;}
+.mi_c1_c_link{width:100%;height:100%;display:block;overflow:hidden;}
+.mi_c1_c_link .img{display:block;width:100%;position:absolute;left:0%;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);}
+.mi_c1_c_link .words{display:block;width:80%;left:10%;position:absolute;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);}
+.mi_c1_c_link strong{line-height:31px;text-align:center;font-size:27px;font-weight:400;color:#fff;text-shadow:0px 0px 10px rgba(0,0,0,1);display:block;margin-top:4px;}
+.mi_c1_c_link span{line-height:23px;text-align:center;font-size:15px;font-weight:400;color:#fff;text-shadow:0px 0px 10px rgba(0,0,0,1);display:block;margin-top:4px;}
+
+.swiper-container1{height:100%;width:100%;}
+.swiper-pagination-bullet {width: 6px;height: 6px;display: inline-block;border-radius: 100%;background: #fff;opacity: .4;}
+.swiper-pagination-bullet-active {opacity: 1;background: #ff4c39;}
+.pagination .swiper-pagination-bullet {margin: 0 4px;}
+
+.mi_c2{width:100%;background:#fff;padding-bottom:10px;position:relative;}
+.mi_c2:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.mi_title1{width:100%;height:60px;line-height:60px;color:#333;font-size:22px;text-align:center;margin-bottom:-10px;font-weight:100;box-sizing:border-box;}
+.mi_title1 span{display:inline-block;vertical-align:top;max-width:70%;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.mi_goodlist1{position:relative;}
+.mi_goodlistitem{height:164px;width:100%;box-sizing:border-box;position:relative;overflow:hidden;background:#fff;}
+.mi_goodlistitem_link{padding:10px 10px 10px 164px;display:block;position:relative;width:100%;box-sizing:border-box;height:164px;}
+.mi_goodlistitem_link:active{background:#f3f3f3;}
+.mi_goodlistitem .imgw{height:144px;width:144px;left:10px;top:10px;border-radius:2px;overflow:hidden;position:absolute;background:#eee;}
+.mi_goodlistitem .crown{position:absolute;left:0px;top:-7px;height:50px;width:50px;background:url(http://site.meishij.net/p2/20160927/20160927113834_796.png) center /100% 100% no-repeat;z-index:100;}
+.mi_goodlistitem .imgw img{display:block;width:100%;left:50%;top:50%;position:absolute;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
+.mi_goodlistitem .t{font-size:17px;width:100%;display:block;color:#333;line-height:30px;padding-top:2px;height:30px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;font-weight:100;}
+.mi_goodlistitem .des{height:34px;font-size:12px;color:#999;line-height:17px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;text-overflow: ellipsis;overflow: hidden;}
+.mi_goodlistitem .tagw{height:14px;width:100%;text-align:right;margin-top:7px;overflow:hidden;}
+.mi_goodlistitem .tagw span{height:14px;padding:0px 4px;border-radius:2px;color:#fff;display:inline-block;vertical-align:top;margin-left:5px;font-size:10px;line-height:14px;}
+.mi_goodlistitem .tagw .tag1{background:#89c997;}
+.mi_goodlistitem .tagw .tag2{background:#ff9913;}
+.mi_goodlistitem .tagw .tag3{background:#ff4c39;}
+.mi_goodlistitem .price{height:36px;text-align:right;vertical-align: bottom;line-height:30px;font-size:12px;color:#ff4c39;}
+
+.mi_goodlistitem .price em{font-size:21px;color:#ff4c39;line-height:36px;display:inline-block;font-weight:100;}
+.mi_goodlistitem .his_price{line-height:16px;height:16px;font-size:12px;color:#999;text-align:right;display:block;}
+.mi_goodlistitem:after{content:" ";width:200%;height:1px;background:#eee;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.mi_goodlistitem:last-child:after{display:none;}
+.mi_goodlistitem .sales_volume{height:26px;line-height:26px;font-size:12px;color:#999;}
+.mi_goodlistitem .sales_volume .red{color:#ff4c39;}
+.mi_goodlistitem .price1{height:36px;text-align:right;vertical-align: bottom;line-height:30px;font-size:12px;color:#ff4c39;position:absolute;bottom:12px;right:10px;}
+.mi_goodlistitem .price1 em{font-size:21px;color:#ff4c39;line-height:36px;display:inline-block;font-weight:100;}
+
+.mi_goodlistitem .addtocart{display:none;}
+
+.mi_c3{width:100%;background:#fff;margin-bottom:10px;padding-bottom:1px;position:relative;}
+.mi_c3:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+
+.mi_goodlist2ww{width:100%;position:relative;}
+.mi_goodlist2ww .scrollcover{position:absolute;width:100%;height:6px;background:#fff;z-index:100;left:0px;bottom:0px;}
+.mi_goodlist2w{width:100%;height:166px;padding:10px;position:relative;box-sizing:border-box;overflow: hidden;overflow-x: auto;-webkit-overflow-scrolling: touch;}
+.mi_goodlist2w::-webkit-scrollbar-thumb{background:#fff;border-radius:4px;height:0px;width:0px;}
+
+
+.mi_goodlist2{position:absolute;left:10px;top:10px;padding-right:5px;font-size:0px;}
+.mi_goodlist2item{width:104px;height:104px;margin-right:5px;background:#eee;border-radius:2px;display:inline-block;vertical-align:top;}
+.mi_goodlist2item .link{display:block;}
+.mi_goodlist2item .imgw{height:104px;width:104px;border-radius:2px;overflow:hidden;background:#eee;position:relative;}
+.mi_goodlist2item .imgw img{display:block;width:100%;left:50%;top:50%;position:absolute;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
+.mi_goodlist2item .imgw .rank{display:block;height:16px;width:16px;background:#eb6100;z-index:100;font-size:10px;line-height:16px;text-align:center;position:absolute;color:#fff;}
+.mi_goodlist2item .t{font-size:12px;line-height:22px;color:#333;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;padding-top:3px;font-weight:100;}
+.mi_goodlist2item .p{font-size:12px;line-height:14px;color:#ff4c39;text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;}
+
+.mi_c4{width:100%;background:#fff;margin-top:10px;padding-bottom:1px;position:relative;}
+.mi_c4:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+
+.ztitem1{width:100%;margin-top:10px;position:relative;padding-top:54%;background:#eee;}
+.ztitem1 .img{display:block;width:100%;position:absolute;left:0%;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);}
+.ztitem1 .words{display:block;width:80%;left:10%;position:absolute;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);}
+.ztitem1 strong{line-height:31px;text-align:center;font-size:27px;font-weight:400;color:#fff;text-shadow:0px 0px 10px rgba(0,0,0,1);display:block;margin-top:4px;}
+.ztitem1 span{line-height:23px;text-align:center;font-size:15px;font-weight:400;color:#fff;text-shadow:0px 0px 10px rgba(0,0,0,1);display:block;margin-top:4px;}
+
+.linew{width:100%;height:1px;position:relative;}
+.linew span{width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+
+
+.ztitem2{width:100%;margin-top:10px;position:relative;}
+.ztitem2 .t{font-size:19px;color:#333;font-weight:100;text-align:center;line-height:45px;padding-top:6px;width:80%;margin:0px auto;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.ztitem2 .des{font-size:14px;line-height:21px;color:#666;padding:0px 10px;box-sizing:border-box;}
+.mi_items_1{width:100%;background:#fff;padding-bottom:0px;margin-top:10px;}
+.mi_items_1 .link{display:block;padding-top:54%;width:100%;background:#eee;position:relative;}
+.mi_items_1 .img{display:block;width:100%;position:absolute;left:0%;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);}
+.mi_items_1 .words{display:block;width:80%;left:10%;position:absolute;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);}
+.mi_items_1 strong{line-height:29px;text-align:center;font-size:22px;font-weight:400;color:#fff;text-shadow:0px 0px 10px rgba(0,0,0,1);display:block;margin-top:0px;}
+.mi_items_1 span{line-height:21px;text-align:center;font-size:15px;font-weight:400;color:#fff;text-shadow:0px 0px 10px rgba(0,0,0,1);display:block;margin-top:4px;}
+
+.mi_items_2{width:100%;position:relative;background:#eee;padding-top:83.2%;margin-top:10px;}
+.mi_items_2 .mi_c1_c_link{position:absolute;left:0px;top:0px;}
+
+.mi_items_3{width:100%;background:#fff;margin-top:10px;position:relative;}
+.mi_items_3:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.mi_items_3 .link{display:block;width:100%;}
+.mi_items_3 .imgw{display:block;padding-top:56%;overflow:hidden;width:100%;background:#eee;position:relative;}
+.mi_items_3 .imgw img{display:block;width:100%;position:absolute;left:0%;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);}
+
+.mi_items_3 .info{height:104px;}
+.mi_items_3 .info h4{width:80%;margin:0px auto;height:29px;line-height:29px;margin-top:15px;color:#333;font-size:19px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:100;}
+.mi_items_3 .info p{width:80%;margin:0px auto;height:26px;line-height:26px;color:#333;font-size:14px;text-align:center;white-space:nowrap;overflow:hidden;margin-top:1px;text-overflow:ellipsis;font-weight:100;}
+.mi_items_3 .info span{height:31px;line-height:31px;font-size:21px;text-align:center;display:block;color:#ff4c39;font-weight:100;}
+.mi_items_3 .info span em{font-size:14px;vertical-align:bottom;display:inline-block;height:23px;line-height:23px;font-weight:100;}
+.mi_items_3 .info strong{height:29px;line-height:29px;vertical-align:bottom;display:inline-block;font-weight:100;}
+
+
+
+
+
+
+
+/*åˆ†ç±»é¡µ*/
+
+
+.m_sortlist{width:100%;background:#fff;}
+.m_sortitem{width:100%;}
+.m_sortitem .imgw{display:block;width:100%;padding-top:32%;position:relative;}
+.m_sortitem .imgw .img{display:block;position:absolute;left:0px;top:0px;width:100%;height:100%;}
+.m_sortitem .imgw .words{text-shadow:0px 0px 10px rgba(0,0,0,1);display:block;width:100%;left:0%;height:100%;position:absolute;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);text-align:center;font-size:16px;font-weight:100;color:#fff;background:rgba(0,0,0,0.2);}
+.m_sortitem .imgw .words span{display:block;width:100%;left:0%;position:absolute;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);text-align:center;}
+.m_sortitem .imgw .words:active{background:rgba(0,0,0,0.3);}
+.m_sortitem .imgw .words strong{font-weight:900;}
+
+
+.subsorts{padding:15px 10px 30px 10px;}
+.subsorts_item{height:28px;padding:0px 10px 10px 0px;display:inline-block;vertical-align:top;}
+.subsorts_item strong{display:inline-block;vertical-align:top;height:27px;border-radius:2px;padding:0px 10px;text-align:center;color:#333;line-height:27px;position:relative;}
+.subsorts_item:active strong{background:#f6f6f6;}
+.subsorts_item strong:after{content:" ";border:1px solid #dcdcdc;width:200%;height:200%;border-radius:4px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+
+
+
+
+
+/*å†…å®¹é¡µ*/
+
+.gd_top{width:100%;position:relative;padding-top:100%;background:#fff;}
+.swiper_container_gd{width:100%;top:0px;left:0px;height:100%;position:absolute;}
+.gd_topimg{position:absolute;left:50%;top:50%;width:100%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);}
+
+/*.swiper_container_gd>.swiper-pagination{bottom:40px;}*/
+.swiper-pagination-fraction {bottom: 16px;right: 16px;display:inline-block;padding:0px 6px;background:rgba(255,255,255,.8);width:auto;left:auto;font-size:10px;vertical-align:middle;line-height:16px;height:16px;font-weight:100;color:#333;border-radius:2px;}
+.swiper-pagination-fraction span{font-size:12px;}
+
+
+.gf_top_video_w{position:absolute;left:50%;top:50%;width:100%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);background:#000;height:100%;}
+.gf_top_video{display:block;width:100%;position:absolute;left:50%;top:50%;width:100%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);height:100%;}
+
+
+.gd_info{width:100%;background:#fff;margin-bottom:10px;text-align:center;position:relative;}
+.gd_info:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.gd_info h2{line-height:25px;color:#333;font-size:19px;padding:16px 24px 6px;text-align:center;font-weight:100;}
+.gd_info .des{line-height:20px;font-size:14px;color:#666;padding:0px 24px;text-align:center;font-weight:100;}
+
+.gd_info .prices{line-height:25px;height:25px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:6px 24px;position:relative;text-align:center;}
+.gd_info .prices strong{color:#ff4c39;font-size:19px;font-weight:100;}
+.gd_info .shoplink{height:20px;display:inline-block;vertical-align:top;position:relative;padding:0px 8px;border-radius:2px;line-height:19px;font-size:12px;color:#ff9913;margin-top:11px;margin-bottom:20px;}
+.gd_info .shoplink:after{content:" ";border:1px solid #ff9913;width:200%;height:200%;border-radius:4px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.gd_info .shoplink:active{background:rgba(0,0,0,0.1);}
+
+
+.gd_info .prices strong em{font-size:12px;}
+.gd_info .prices span{color:#999;text-decoration:line-through;padding-left:10px;font-size:14px;}
+.gd_info .prices i{position:absolute;right:16px;top:6px;height:30px;line-height:30px;color:#999;font-size:14px;font-style:normal;}
+.gd_info .yf{padding:0px 16px 16px;line-height:18px;height:18px;display:block;font-size:12px;color:#999;}
+
+.gd_checkbtn{height:44px;line-height:44px;background:#fff;margin-bottom:10px;position:relative;}
+.gd_checkbtn a{display:block;height:44px;width:100%;padding:0px 16px;line-height:44px;font-size:14px;color:#333;box-sizing:border-box;background:url(http://site.meishij.net/p2/20160822/20160822133659_222.png) right center /24px 12px no-repeat;}
+.gd_checkbtn a:active{background-color:#f3f3f3;}
+.gd_checkbtn:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.gd_checkbtn a strong{padding-left:10px;display:inline-block;vertical-align:top;color:#999;max-width: 65%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.gd_checkbtn a .amt{font-size:14px;color:#999;display:block;position:absolute;right:36px;top:0px;height:44px;line-height:44px;font-weight:100;}
+.gd_yhcheckbtn{height:44px;line-height:44px;background:#fff;margin-bottom:10px;position:relative;}
+.gd_yhcheckbtn a{display:block;height:44px;width:100%;padding:0px 16px;line-height:44px;font-size:14px;color:#333;box-sizing:border-box;background:url(http://site.meishij.net/p2/20160822/20160822133659_222.png) right center /24px 12px no-repeat;}
+.gd_yhcheckbtn a:active{background-color:#f3f3f3;}
+.gd_yhcheckbtn:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.gd_yhcheckbtn .yh_des{display:inline-block;vertical-align:top;height:44px;line-height:44px;color:#ff4c39;font-size:14px;max-width:80%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.gd_yhcheckbtn .yh_des .tag{display:inline-block;vertical-align:top;font-size:12px;height:20px;border-radius:2px;position:relative;padding:0px 4px;background:#ff4c39;color:#fff;line-height:20px;margin:12px 10px 12px 16px;}
+.gd_yhcheckbtn .yh_des .tag:after{content:" ";height:0px;width:0px;border-top:3px solid #fff;border-right:0px;border-bottom:3px solid #fff;border-left:3px solid #ff4c39;font-size:0px;overflow:hidden;position:absolute;right:-3px;top:7px;}
+
+
+
+
+.gd_bottomw{width:100%;height:50px;}
+.gd_bottom{height:50px;width:100%;position:fixed;left:0px;bottom:0px;background:#fafafa;z-index:500;padding-left:130px;box-sizing:border-box;font-size:0px;}
+
+
+.gdb_kfbtnw{width:65px;height:50px;position:absolute;left:0px;top:0px;box-sizing:border-box;}
+.gdb_kfbtn{display:block;width:65px;height:50px;line-height:24px;padding-top:26px;box-sizing:border-box;color:#666;font-size:10px;text-align:center;background:url(http://site.meishij.net/p2/20160822/20160822140135_580.png) center 2px /30px 30px no-repeat;}
+.gdb_cartbtnw{width:65px;height:50px;position:absolute;left:65px;top:0px;box-sizing:border-box;}
+.gdb_cartbtn{display:block;width:65px;height:50px;line-height:24px;padding-top:26px;box-sizing:border-box;color:#666;font-size:10px;text-align:center;background:url(http://site.meishij.net/p2/20160820/20160820171457_924.png) center 2px /30px 30px no-repeat;}
+
+
+
+.gdb_addcartbtnw{width:44%;display:inline-block;vertical-align:top;}
+.gdb_addcartbtn{width:100%;display:inline-block;vertical-align:top;line-height:50px;line-height:50px;background:#fafafa;text-align:center;color:#666;font-size:15px;}
+
+.gdb_buybtn{width:56%;display:inline-block;vertical-align:top;line-height:50px;line-height:50px;background:#ff4c39;text-align:center;color:#fff;font-size:15px;}
+.gdb_buybtn.w100{width:100%;}
+.gdb_buybtn.disable{background:#aaa;}
+
+.gdb_kfbtnw:after,.gdb_cartbtnw:after,.gdb_addcartbtnw:after{content:" ";height:100px;width:1px;background:#e2e2e2;position:absolute;right:0%;top:-25px;transform:scale(0.5);-webkit-transform:scale(0.5);display:block;}
+.gdb_cartbtn.hasnew:after{content:" ";height:8px;width:8px;display:block;position:absolute;top:5px;right:15px;border-radius:100%;background:#ff4c39;}
+
+.gd_detail{background:#fff;padding:1px 0px 26px;position:relative;}
+.gd_detail:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.gd_detail .detailtitle{display: block;width: 93.75%;margin:10px auto;color: #333;font-size: 18px;line-height: 24px;text-align:center;font-weight:100;padding-top:6px;}
+.gd_detail .detaildes{display: block;width: 93.75%;margin:10px auto;color: #333;font-size: 15px;line-height: 24px;font-weight:100;text-align: justify;}
+.gd_detail img{display: block;width: 100%;}
+
+
+.gd_topbar1{height:44px;position:absolute;left:0px;top:3px;width:100%;z-index:400;}
+.gd_topbar1 .back{display:block;position:absolute;left:3px;top:0px;width:50%;background:url(http://site.meishij.net/p2/20161008/20161008131031_504.png) 0px 0px /44px 44px no-repeat;height:44px;}
+.gd_topbar1 .share{display:block;position:absolute;right:3px;top:0px;width:50%;background:url(http://site.meishij.net/p2/20161008/20161008131031_112.png) right 0px /44px 44px no-repeat;height:44px;}
+
+
+
+
+.sdlist_item{width:100%;position:relative;background:#fff;}
+.sdlist_item:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.sdlist_item .c1{height:28px;padding:16px 10px 0px 48px;}
+.sdlist_item .c1 .avatar{height:28px;width:28px;border-radius:14px;display:inline-block;vertical-align:top;margin-right:10px;position:absolute;left:10px;top:16px;}
+.sdlist_item .c1 .username{line-height:28px;display:inline-block;vertical-align:top;line-height:28px;font-size:14px;color:#666;text-overflow:ellipsis;overflow:hidden;white-space: nowrap;width:100%;}
+.sdlist_item .c1 .username .rebuyicon{display:inline-block;vertical-align:top;margin-left:10px;height:16px;border-radius:2px;overflow:hidden;background:#ff4c39;margin-top:6px;padding:0px 4px;color:#fff;line-height:16px;font-size:10px;}
+.sdlist_item .c2{padding:10px 10px 0px;}
+.sdlist_item .c2 .words{font-size:16px;line-height:24px;color:#333;}
+.sdlist_item .c2 .words .tag{display:inline-block;vertical-align:top;color:#ff4c39;padding-right:6px;}
+.sdlist_item .c2 .sdimgs{padding:5px 0px 0px;font-size:0px;}
+.sdlist_item .c2 .sdimgs .imgw{display:inline-block;vertical-align:top;width:2.5866666rem;height:2.586666666rem;overflow:hidden;position:relative;background:#e2e2e2;border-radius:2px;margin:5px 5px 0px 0px;}
+.sdlist_item .c2 .sdimgs .imgw.singleimgw{width:8rem;height:auto;}
+
+.sdlist_item .c2 .sdimgs img{display:block;position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
+.sdlist_item .c2 .sdimgs .imgw.singleimgw img{position:relative;width:100%;left:0px;top:0px;transform: translate(0%, 0%);-webkit-transform: translate(0%, 0%);}
+.sdlist_item .c3{height:40px;line-height:40px;padding:0px 10px;position:relative;}
+.sdlist_item .c3 .time{color:#999;font-size:12px;font-weight:100;}
+.sdlist_item .c3 .zanbtn{height:40px;display:block;position:absolute;right:10px;top:0px;color:#999;font-size:12px;padding-left:30px;background:url(http://site.meishij.net/p2/20161008/20161008160210_931.png) left center /40px 40px no-repeat;}
+.sdlist_item .c3 .zanbtned{background:url(http://site.meishij.net/p2/20161008/20161008160210_234.png) left center /40px 40px no-repeat;color:#ff4c39;}
+
+.sdlist_item .c4{width:100%;padding-bottom:16px;}
+.sdlist_item .c4 .kefu_re_w{display:block;margin:0px 10px;background:#f3f3f3;padding:8px 12px;position:relative;}
+.sdlist_item .c4 .kefu_re_w:before{ content:" ";width: 0;height: 0;border-left: 12px solid transparent;    border-right: 12px solid transparent;    border-bottom: 16px solid #f3f3f3;position:absolute;left:14px;top:-6px;}
+.sdlist_item .c4 .kefu_re_w p{color:#333;font-size:14px;line-height:22px;text-align:justify;}
+
+.gd_detail_sdlist_more{width:100%;height:44px;text-align:center;color:#333;font-size:14px;line-height:44px;text-align:center;display:block;}
+.gd_detail_sdlist_more:active{background:rgba(0,0,0,0.1);}
+
+
+
+.gd_cplist{width:100%;background:#fff;position:relative;margin-top:10px;padding-bottom:10px;}
+.gd_cplist:before{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;top:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.gd_cplist:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.gd_subtitle{height:53px;line-height:54px;color:#333;font-size:15px;padding:0px 10px;}
+.gd_cplistw{padding:0px 5px 0px;box-sizing:border-box;width:100%;font-size:0px;}
+.gd_cplistitem{width:50%;padding:0px 5px 10px;box-sizing:border-box;display:inline-block;vertical-align:top;}
+.gd_cplistitem a{display:block;width:100%;padding-top:100%;position:relative;border-radius:2px;overflow:hidden;}
+.gd_cplistitem a .img{display:block;width:100%;position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);border-radius:2px;}
+.gd_cplistitem a strong{height:28px;line-height:28px;color:#fff;font-size:14px;text-align:center;position:absolute;left:0px;bottom:0px;width:100%;white-space: nowrap;text-overflow:ellipsis;overflow:hidden;padding:30px 0px 0px;background: linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%);}
+
+.gd_goodlistw{font-size:0px;padding-top:6px;background:#f6f6f6;}
+.gd_goodlist{width:100%;background:#fff;position:relative;margin-top:10px;padding-bottom:0px;}
+.gd_goodlist:before{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;top:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.gd_goodlist{box-sizing:border-box;width:100%;font-size:0px;}
+
+.mi_goodlistitem_bigimgview{height:auto;width:50%;box-sizing:border-box;position:relative;overflow:hidden;background:#f6f6f6;padding:0px 3px 6px 0px;display:inline-block;}
+.mi_goodlistitem_bigimgview:nth-child(2n){padding:0px 0px 6px 3px;}
+.mi_goodlistitem_bigimgview a{padding:0% 0px 0px 0px;display:block;position:relative;width:100%;box-sizing:border-box;height:auto;background:#fff;}
+.mi_goodlistitem_bigimgview a:active{background:#f3f3f3;}
+
+.mi_goodlistitem_bigimgview .addtocart{display:block;width:100%;height:28px;background:#ff4c39;color:#fff;line-height:28px;font-size:12px;text-align:center;}
+.mi_goodlistitem_bigimgview .addtocart:active{background:#c90000;}
+
+.mi_goodlistitem_bigimgview .imgw{width:100%;padding-top:100%;left:0px;top:0px;border-radius:0px;overflow:hidden;position:relative;background:#fff;height:auto;}
+.mi_goodlistitem_bigimgview .imgw img{display:block;width:100%;left:50%;top:50%;position:absolute;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
+
+.mi_goodlistitem_bigimgview .t{font-size:14px;width:100%;display:block;color:#333;line-height:32px;padding-top:6px;height:32px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;font-weight:100;text-align:center;}
+.mi_goodlistitem_bigimgview .des{display:none;}
+.mi_goodlistitem_bigimgview .tagw{height:14px;width:100%;text-align:center;margin-top:0px;overflow:hidden;}
+.mi_goodlistitem_bigimgview .tagw span{height:14px;padding:0px 4px;border-radius:2px;color:#fff;display:inline-block;vertical-align:top;margin:0px 2px;font-size:10px;line-height:14px;}
+.mi_goodlistitem_bigimgview .tagw .tag1{background:#89c997;}
+.mi_goodlistitem_bigimgview .tagw .tag2{background:#ff9913;}
+.mi_goodlistitem_bigimgview .tagw .tag3{background:#ff4c39;}
+.mi_goodlistitem_bigimgview .price{height:30px;text-align:center;vertical-align: bottom;line-height:30px;font-size: 12px;color:#ff4c39;padding-bottom:6px;}
+.mi_goodlistitem_bigimgview .price em{font-size:14px;color:#ff4c39;line-height:30px;display:inline-block;font-weight:100;position:relative;}
+.mi_goodlistitem_bigimgview .price em:before{content:"";font-size:12px;}
+
+.mi_goodlistitem_bigimgview .his_price{display:none;}
+.mi_goodlistitem_bigimgview:after{content:" ";width:200%;height:1px;background:#eee;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.mi_goodlistitem_bigimgview:last-child:after{display:none;}
+.mi_goodlistitem_bigimgview .sales_volume{height:26px;line-height:26px;font-size:12px;color:#999;}
+.mi_goodlistitem_bigimgview .sales_volume .red{color:#ff4c39;}
+.mi_goodlistitem_bigimgview .price1{height:36px;text-align:right;vertical-align: bottom;line-height:30px;font-size:12px;color:#ff4c39;position:absolute;bottom:12px;right:10px;}
+.mi_goodlistitem_bigimgview .price1 em{font-size:21px;color:#ff4c39;line-height:36px;display:inline-block;font-weight:100;}
+
+
+
+
+
+
+
+
+.yh_con{position: fixed;top:0;width: 100%;height: 100%;background: rgba(0,0,0,0.7);z-index: 999;display: none;}
+.yh_form{position: fixed;bottom: -100%;width: 100%;padding: 0px 0 20px;box-sizing:border-box;background: #fff;z-index: 999;}
+.yh_form .t{width:100%;height:44px;position:relative;line-height:44px;padding-left:10px;box-sizing:border-box;font-size:14px;color:#333;}
+.yh_form .t:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.shut_yh_con{height:44px;width:44px;position:absolute;display:block;right:0px;top:0px;font-size:18px;color:#666;text-align:center;}
+.yh_con_item{position:relative;display:inline-block;vertical-align:top;height:44px;line-height:44px;color:#333;font-size:14px;width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;box-sizing:border-box;background:url(http://site.meishij.net/p2/20160822/20160822133659_222.png) right center /24px 12px no-repeat;}
+.yh_con_item:active{background-color:#f3f3f3;}
+.yh_con_item .tag{display:inline-block;vertical-align:top;font-size:12px;height:20px;border-radius:2px;position:relative;padding:0px 4px;background:#ff4c39;color:#fff;line-height:20px;margin:12px 10px 12px 10px;}
+.yh_con_item .tag:after{content:" ";height:0px;width:0px;border-top:3px solid #fff;border-right:0px;border-bottom:3px solid #fff;border-left:3px solid #ff4c39;font-size:0px;overflow:hidden;position:absolute;right:-3px;top:7px;}
+.yh_con_item:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.yh_con_item p{max-width:70%;display:inline-block;vertical-align:top;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+
+
+
+
+
+
+
+
+
+.share_box{background:#fff;width:100%;position:fixed;left:0px;bottom:-198px;height:198px;z-index:20001;}
+.share_box .shut{display:block;height:49px;line-height:49px;text-align:center;color:#ff5151;font-size:16px;border-top:1px solid #e8e8e8;width:90%;margin:0px auto;}
+.share_box .t{height:58px;line-height:58px;width:100%;font-size:14px;color:#333;text-align:center;}
+.share_box .c{width:100%;text-align:center;}
+.share_box_items{width:22.5%;height:90px;display:inline-block;vertical-align:top;}
+.share_box_items a{display:block;height:100%;width:100%;}
+.share_box_items img{display:inline-block;vertical-align:top;height:50px;width:50px;margin:0px auto 0px;}
+.share_box_items span{display:block;height:28px;line-height:28px;color:#333;font-size:12px;}
+
+
+
+
+.choose_con{position: fixed;top:0;width: 100%;height: 100%;background: rgba(0,0,0,0.7);z-index: 999;display: none;}
+
+.choose_form{position: fixed;bottom: -100%;width: 100%;padding: 16px 0 0px;box-sizing:border-box;background: #fff;z-index: 999;}
+.choose_form .close{width: 44px;height: 44px;position: absolute;top: 0px;right: 0;z-index: 999;}
+.choose_form .close img{display: block;width: 100%;}
+
+.choose_form .top{width: 100%;position: relative;margin: 0 auto;height:107px;padding:0px 10px 17px 110px;box-sizing:border-box;border-bottom:1px solid #f5f5f5;}
+
+.choose_form .top img{display: inline-block;vertical-align: top;width: 90px;height:90px;position:absolute;left:10px;top:0px;border-radius:4px;}
+
+.choose_form .top .price{display: inline-block;vertical-align: top;}
+
+.choose_form .top .price span{color: #ff4c39;font-size: 22px;display: block;line-height: 30px;padding-top:6px;font-weight:100;}
+.choose_form .top .price i{color: #999;font-size: 14px;line-height:22px;font-weight:100;font-style:normal;text-decoration: line-through;}
+.choose_form .top .price strong{font-size: 14px;color: #333;display: block;line-height: 26px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;font-weight:100;}
+
+
+.choose_form .info{width: 100%;overflow: scroll;margin:0 auto;padding:0px 0px 30px;box-sizing:border-box;}
+.choose_form .info .item{width: 100%;padding:10px 10px 20px;box-sizing:border-box;}
+
+.choose_form .info .item p{font-size: 14px;color: #333;line-height: 32px;height:32px;}
+.choose_form .info .item .options{font-size: 0;max-height:152px;overflow: hidden;overflow-y: auto;-webkit-overflow-scrolling: touch;}
+
+.choose_form .info .item .options span{display: inline-block;vertical-align: top;height:30px;line-height:28px;box-sizing:border-box;color: #666;border:1px solid #f5f5f5;padding: 0px 10px;font-size: 14px;margin: 8px 8px 0px 0px;border-radius:4px;}
+.choose_form .info .item .options .checked{color: #fff;background: #ff4c39;border:1px solid #ff4c39;}
+.choose_form .info .item .options .cantcheck{background: #f5f5f5;border:1px solid #f5f5f5;color:#999;}
+
+.choose_form .info .item .checkamountw{font-size: 14px;color:#333;line-height:36px;height:36px;position:relative;}
+.choose_form .info .item .checkamountw .reamount{height:36px;width:84px;background:url(http://site.meishij.net/p2/20161010/20161010210256_467.png) center /100% 100% no-repeat;position:absolute;right:10px;bottom:0px;}
+.choose_form .info .item .checkamountw .reamount .n{height:36px;line-height:36px;text-align:center;font-size:16px;color:#333;text-align:center;display:block;width:100%;}
+.choose_form .info .item .checkamountw .reamount .reducebtn{height:36px;width:42px;position:absolute;left:0px;top:0px;display:block;}
+.choose_form .info .item .checkamountw .reamount .addbtn{height:36px;width:42px;position:absolute;right:0px;top:0px;display:block;}
+.choose_form .info .item .checkamountw .reamount a:active{background:rgba(0,0,0,0.1);}
+
+
+
+.choose_form .btnw{height:50px;font-size:0px;width:100%;}
+.choose_form .btnw .c{width:50%;display:inline-block;vertical-align:top;height:50px;text-align:center;font-size:16px;color:#666;background:#fafafa;line-height:50px;}
+.choose_form .btnw .b{width:50%;display:inline-block;vertical-align:top;height:50px;text-align:center;font-size:16px;color:#fff;background:#ff4c39;line-height:50px;}
+.choose_form .btnw .s{width:100%;display:inline-block;vertical-align:top;height:50px;text-align:center;font-size:16px;color:#fff;background:#ff4c39;line-height:50px;display:none;}
+
+.choose_form .btnw .c.disable{background:#aaa;color:#fff;}
+.choose_form .btnw .b.disable{background:#aaa;color:#fff;}
+.choose_form .btnw .s.disable{background:#aaa;color:#fff;}
+
+.choose_form .btnw.only_b .c{display:none;}
+.choose_form .btnw.only_b .b{width:100%;}
+.choose_form .btnw.only_b .s{display:none;}
+
+.choose_form .btnw.only_s .c{display:none;}
+.choose_form .btnw.only_s .b{display:none;}
+.choose_form .btnw.only_s .s{display:inline-block;}
+
+
+.checker_submit{height:44x;width:100%;text-align:center;color:#aaa;line-height:44px;display:block;background:#f5f5f5;font-size:14px;}
+.checker_submit.abled{background:#ff4c39;color:#fff;}
+
+.Alert{display:none;padding:16px 24px;color:#fff;max-width:240px;line-height:22px;font-size:14px;position:fixed;left:50%;top:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);z-index:30000;background:rgba(0,0,0,0.6);border-radius:10px;}
+
+
+
+
+
+/*æ™’å•é¡µ*/
+.shaidan_listw{width:100%;}
+.sdlist_filter{width:100%;height:52px;background:#fff;position:relative;font-size:0px;}
+.sdlist_filter:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.sdlist_filter_item{width:25%;display:inline-block;vertical-align:top;padding-top:6px;height:46px;}
+.sdlist_filter_item span{display:block;height:20px;line-height:20px;font-size:12px;color:#666;text-align:center;}
+.sdlist_filter_item:active{background:#f3f3f3;}
+.sdlist_filter_item.current span{color:#ff4c39;}
+
+/*åº—é“ºé¡µ*/
+.shopheader{width:100%;}
+.headerimg{width:100%;display:block;}
+.shopinfo{width:100%;background:#fff;position:relative;}
+.shopinfo:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.shopinfo h1{font-size:19px;color:#333;font-weight:100;line-height:25px;padding:27px 20px 10px;text-align:center;}
+.shopinfo p{color:#666;padding:0px 10px 30px;line-height:20px;font-size:14px;text-align:justify;}
+
+.cplist_filterw{height:44px;width:100%;background:#fff;position:relative;font-size:0px;}
+.cplist_filterw:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.cplist_filteritem{display:inline-block;vertical-align:top;position:relative;text-align:center;font-size:15px;color:#666;line-height:44px;}
+.w33{width:33.333333333%;}
+.w25{width:25%;}
+.cplist_filteritem a{color:#666;display:block;}
+.cplist_filteritem a:active{background:#f3f3f3;}
+.cplist_filteritemc{width:100%;font-size:15px;}
+.cplist_filteritemc:active{background:#f3f3f3;}
+.cplist_filteritemc.current{color:#ff4c39;}
+.cplist_filteritemc1 .arrow{display:inline-block;vertical-align:top;background:url(http://site.meishij.net/p2/20161008/20161008213808_186.png) 0px -26px /10px 30px no-repeat;width:10px;height:4px;margin:20px 0px 0px 4px;}
+.cplist_filteritemc1 .arrow1{background-position:0px -10px;}
+
+.llist_ad{width:100%;padding-top:24%;background:#f3f3f3;position:relative;overflow:hidden;}
+.llist_ad a{display:block;width:100%;height:100%;position:absolute;left:0px;top:0px;}
+.llist_ad a img{left:50%;top:50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);position:absolute;width:100%;}
+
+.cplist_filteritemc3 .arrow{display:inline-block;vertical-align:top;background:url(http://site.meishij.net/p2/20161008/20161008213808_186.png) 0px -0px /10px 30px no-repeat;width:10px;height:10px;margin:17px 0px 0px 4px;}
+.cplist_filteritemc3 .arrow1{background-position:0px -10px;}
+.cplist_filteritemc3 .arrow2{background-position:0px -20px;}
+
+.cplist_filteritemc3 .pxicon{}
+
+.px_select{position:absolute;left:0px;top:44px;width:100%;background:#fff;display:none;z-index:100;padding:12px 0px;}
+.px_select a{display:block;height:36px;line-height:36px;color:#666;font-size:14px;text-align:center;}
+.px_select a.current{color:#ff4c39;}
+.px_select a:active{background:#f3f3f3;}
+
+
+.cplist_filteritemc4 .pxicon{display:block;height:44px;width:44px;margin:0px auto;background:url(http://site.meishij.net/p2/20161009/20161009095108_374.png) center /44px 88px no-repeat;}
+.cplist_filteritemc4 .pxicon1{background-position:0px 0px;}
+.cplist_filteritemc4 .pxicon2{background-position:0px -44px;}
+
+
+
+/*æˆ‘çš„è®¢å•*/
+.mydd_tabw{height:40px;line-height:40px;background:#fff;font-size:0px;}
+.nodd_tipimg{display:block;padding:100px 0px 0px;margin:0px auto;height:103px;}
+
+.hasbb1{position:relative;}
+.hasbb1:after{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;bottom:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.mdd_tabitem{width:20%;display:inline-block;vertical-align:top;height:40px;}
+.mdd_tabitem a{display:block;width:100%;height:40px;text-align:center;}
+.mdd_tabitem a:active{background:#f3f3f3;}
+.mdd_tabitem a strong{display:inline-block;vertical-align:top;height:36px;line-height:36px;border-top:2px solid transparent;border-bottom:2px solid transparent;color:#666;font-size:14px;position:relative;z-index:10;}
+.mdd_tabitem.current a strong{color:#ff4c39;border-bottom:2px solid #ff4c39;}
+
+.mydd_itemlist{}
+.mydd_item{width:100%;margin-top:10px;}
+.mydd_item .c1{height:40px;font-size:0px;background:#fff;}
+.mydd_item .c1 .shopn{width:70%;display:inline-block;vertical-align:top;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;color:#666;padding-left:35px;box-sizing:border-box;line-height:40px;background:url(http://site.meishij.net/p2/20161010/20161010101426_191.png) 10px center /auto 100% no-repeat;}
+.mydd_item .c1 .ddstate{width:30%;display:inline-block;vertical-align:top;color:#ff4c39;font-size:14px;line-height:40px;padding-right:10px;box-sizing:border-box;text-align:right;}
+
+.mydd_item .c2{background:#fff;}
+.mydd_item .c2 .dd_goods{display:block;}
+.mydd_item .c2 .dd_goods:active{background:#f3f3f3;}
+
+.mydd_item .c2 .dd_goods .singlegoods{padding:10px 10px 10px 80px;position:relative;height:60px;}
+.mydd_item .c2 .dd_goods .singlegoods .imgw{height:60px;width:60px;position:absolute;left:10px;top:10px;overflow:hidden;border-radius:2px;overflow:hidden;background:#f3f3f3;}
+.mydd_item .c2 .dd_goods .singlegoods .imgw:after{content:" ";border:1px solid #e2e2e2;width:200%;height:200%;border-radius:4px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.mydd_item .c2 .dd_goods .singlegoods .imgw img{display:block;width:100%;height:auto;position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
+.mydd_item .c2 .dd_goods .singlegoods .info{height:60px;width:100%;}
+.mydd_item .c2 .dd_goods .singlegoods .info .n{font-size:16px;color:#333;line-height:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.mydd_item .c2 .dd_goods .singlegoods .info .p{font-size:16px;color:#333;line-height:26px;text-align:right;display:block;margin-top:6px;position:relative;}
+.mydd_item .c2 .dd_goods .singlegoods .info .p em{font-size:14px;color:#999;}
+.mydd_item .c2 .dd_goods .singlegoods .info .p .red{color:#ff4c39;font-size:16px;position:absolute;left:0px;top:0px;display:block;height:26px;line-height:26px;}
+
+.mydd_item .c2 .dd_goods .mulgoods{padding:10px 10px 0px;position:relative;font-size:0px;}
+.mydd_item .c2 .dd_goods .mulgoods .imgw{height:2.5rem;width:2.5rem;overflow:hidden;border-radius:2px;overflow:hidden;background:#f3f3f3;display:inline-block;vertical-align:top;margin:0px 10px 10px 0px;position:relative;}
+.mydd_item .c2 .dd_goods .mulgoods .imgw:after{content:" ";border:1px solid #e2e2e2;width:200%;height:200%;border-radius:4px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.mydd_item .c2 .dd_goods .mulgoods .imgw img{display:block;height:100%;width:100%;}
+
+.mydd_item .c3{height:40px;font-size:0px;background:#fff;}
+.mydd_item .c3 .dd_price{display:block;padding:0px 10px;text-align:right;color:#ff4c39;font-size:14px;line-height:40px;height:40px;}
+
+.mydd_item .c4{height:48px;}
+.mydd_item .c4 .c4_fixerw{height:48px;width:100%;position:fixed;left:0px;bottom:0px;z-index:500;}
+.mydd_item .c4 .c4_fixerw:before{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;top:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.dd_btns{padding:10px;height:28px;text-align:right;font-size:0px;background:#fff;}
+.dd_btns .wlxq{height:28px;width:76px;display:inline-block;border-radius:2px;overflow:hidden;font-size:14px;color:#666;text-align:center;line-height:28px;margin-left:10px;}
+.dd_btns .sqtk{height:28px;width:76px;display:inline-block;border-radius:2px;overflow:hidden;font-size:14px;color:#666;text-align:center;line-height:28px;margin-left:10px;}
+.dd_btns .go_sd{height:28px;width:76px;display:inline-block;border-radius:2px;overflow:hidden;font-size:14px;color:#ff4c39;text-align:center;line-height:28px;margin-left:10px;}
+.dd_btns .qrsh{height:28px;width:76px;display:inline-block;border-radius:2px;overflow:hidden;font-size:14px;color:#ff4c39;text-align:center;line-height:28px;margin-left:10px;}
+.dd_btns .go_pay{height:28px;padding:0px 12px;display:inline-block;border-radius:2px;overflow:hidden;font-size:14px;color:#ff4c39;text-align:center;line-height:28px;margin-left:10px;background:#ff4c39;color:#fff;}
+.dd_btns .go_pay:active{background:#c90000;}
+
+.dd_btns .go_pay .djs_w{display:inline-block;vertical-align:top;}
+
+
+.mydd_item .c5{margin-top:10px;background:#fff;padding:14px 0px;margin-bottom:32px;}
+.mydd_item .c5 p{font-size:14px;line-height:24px;color:#666;margin:0px 10px;}
+.mydd_item .c5 p .red{color:#ff4c39;}
+
+
+.mydd_item .c6{background:#fff;padding:14px 0px;}
+.mydd_item .c6 a{margin:0px 10px;display:block;text-align:center;font-size:14px;color:#666;height:36px;line-height:36px;border-radius:4px;overflow:hidden;position:relative;}
+.mydd_item .c6 a img{display:inline-block;vertical-align:top;width:18px;height:36px;padding-right:4px;}
+.mydd_item .c6 a:after{content:" ";border:1px solid #9a9a9a;width:200%;height:200%;border-radius:8px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.mydd_item .c6 a:active{background-color:#f3f3f3;}
+
+.hasgreyborder{position:relative;}
+.hasgreyborder:after{content:" ";border:1px solid #e2e2e2;width:200%;height:200%;border-radius:4px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.hasgreyborder:active{background:#f3f3f3;}
+.hasredborder{position:relative;}
+.hasredborder:after{content:" ";border:1px solid #ff4c39;width:200%;height:200%;border-radius:4px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.hasredborder:active{background:#ff4c39;color:#fff;}
+
+
+.blackbg{width:100%;height:100%;background:rgba(0,0,0,0.5);left:0px;top:0px;position:fixed;z-index:500;display:none;}
+.tel_kefu_box{display:none;position:fixed;left:50%;top:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);background:#fff;border-radius:12px;z-index:600;background:#fff;width:270px;text-align:center;}
+.tel_kefu_box span{font-size:12px;color:#333;line-height:18px;padding-top:16px;text-align:center;display:block;}
+.tel_kefu_box p{color:#333;font-size:22px;line-height:28px;}
+.tel_kefu_box a{width:250px;margin:10px auto 10px;display:block;height:40px;line-height:40px;color:#fff;background:#ff4c39;border-radius:4px;font-size:14px;}
+.tel_kefu_box a:active{background:#c90000;}
+
+
+.ddxq_top{height:94px;width:100%;background:#ff4c39;position:relative;margin-bottom:-10px;}
+.ddxq_top_ddfk{background:#ff4c39 url(http://site.meishij.net/p2/20161011/20161011175438_988.png) right center /auto 100% no-repeat;}
+.ddxq_top_ddfh{background:#ff4c39 url(http://site.meishij.net/p2/20161011/20161011175437_402.png) right center /auto 100% no-repeat;}
+.ddxq_top_mjyfh{background:#ff4c39 url(http://site.meishij.net/p2/20161011/20161011175437_393.png) right center /auto 100% no-repeat;}
+.ddxq_top_jycg{background:#ff4c39 url(http://site.meishij.net/p2/20161011/20161011175437_857.png) right center /auto 100% no-repeat;}
+.ddxq_top_jygb{background:#ff4c39 url(http://site.meishij.net/p2/20161011/20161011175437_290.png) right center /auto 100% no-repeat;}
+
+
+.ddxq_top p{line-height:22px;color:#fff;font-size:16px;text-indent:40px;position:absolute;left:0px;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);}
+.ddxq_top p em{font-size:12px;display:block;font-weight:100;line-height:18px;}
+
+.wl_infow{width:100%;background:#fff url(http://site.meishij.net/p2/20161011/20161011183411_619.png) 10px 16px /20px 14px no-repeat;margin-top:10px;}
+.wl_info_link{padding:14px 10px 14px 35px;display:block;background: url(http://site.meishij.net/p2/20160822/20160822133659_222.png) right 17px /24px 12px no-repeat;}
+
+.wl_info_link:active{background-color:rgba(0,0,0,0.1);}
+.wl_info_link p{font-size:14px;line-height:20px;color:#333;padding:0px 40px 0px 0px;}
+.wl_info_link .time{font-size:12px;line-height:18px;color:#999;padding:0px 0px 0px 0px;}
+
+.cus_mesw{width:100%;background:#fff;padding:14px 0px;margin-top:10px;}
+.cus_mesw p{color:#333;font-size:14px;line-height:24px;margin:0px 10px;}
+
+.cus_addw{width:100%;background:#fff;padding:14px 0px;margin-top:10px;position:relative;}
+.cus_addw p{color:#333;font-size:14px;line-height:24px;margin:0px 10px;}
+.cus_addw p .addr{line-height:20px;display:inline-block;margin-top:4px;}
+.cus_addw .tel{color:#333;font-size:14px;line-height:24px;margin:0px 10px;position:absolute;right:0px;top:14px;display:block;}
+
+/*æ”¯ä»˜è®¢å•*/
+
+.payinfo{width:100%;background:#fff;padding:10px;box-sizing:border-box;}
+.payinfo p{width:100%;font-size:14px;line-height:24px;color:#666;position:relative;}
+.payinfo p strong{color:#ff4c39;font-weight:100;position:absolute;right:0px;}
+.paytoolscheckw{width:100%;background:#fff;box-sizing:border-box;margin-top:10px;}
+.paytools{height:60px;width:100%;padding:10px 10px 10px 64px;box-sizing:border-box;position:relative;line-height:40px;color:#333;font-size:14px;}
+.paytools .icon{position:absolute;left:10px;top:10px;display:block;width:40px;height:40px;}
+.paytools:active{background:#f3f3f3;}
+.paytools .checker{height:18px;width:18px;border:1px solid #ddd;box-sizing:border-box;position:absolute;right:10px;top:21px;border-radius:9px;}
+.paytools .checker.checked{background:#ff4c39 url(http://site.meishij.net/p2/20161010/20161010214233_385.png) center /100% 100% no-repeat;;border:1px solid #ff4c39;}
+.paypage_paybtn{margin:30px 10px 40px;background:#ff4c39;height:40px;line-height:40px;color:#fff;text-align:center;font-size:14px;border-radius:4px;display:block;}
+.paypage_paybtn:active{background:#c90000;}
+
+
+/*è´­ç‰©è½¦*/
+.cart_empty_box{width:100%;background:#fff;padding:32px 0px 32px;text-align:center;}
+.cart_empty_box img{display:block;height:44px;width:44px;margin:0px auto;}
+.cart_empty_box p{color:#999;font-size:14px;line-height:30px;}
+
+.cartitemlist{width:100%;}
+.cartitem{margin-top:10px;background:#fff;padding-top:4px;padding-bottom:5px;}
+.cartitem_outofdate{opacity:0.8;}
+
+
+.cartitem .c1{width:100%;position:relative;}
+.cartitem .c1 .shopn{display:inline-block;vertical-align:top;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;color:#333;padding-left:22px;box-sizing:border-box;line-height:40px;background:url(http://site.meishij.net/p2/20161010/20161010101426_191.png) 0px center /auto 100% no-repeat;margin-left:38px;}
+.cartitem .c1 .shopn:active{background:#f3f3f3;}
+.cartitem .c2{width:100%;position:relative;margin-bottom:7px;}
+.cartitem .c2 .yh_got{height:18px;line-height:18px;margin-left:38px;font-size:13px;color:#333;position:relative;display:block;}
+.cartitem .c2 .yh_got .tag{display:inline-block;vertical-align:top;height:12px;font-size:10px;padding:0px 1px;border-radius:1px;overflow:hidden;position:relative;line-height:12px;color:#ff4c39;margin-top:3px;}
+.cartitem .c2 .yh_got .tag:after{content:" ";border:1px solid #ff4c39;width:200%;height:200%;border-radius:4px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.cartitem .c2 .yh_got .cd{font-size:12px;color:#ff4c39;position:absolute;right:10px;top:0px;}
+
+.cartitem .c3{width:100%;position:relative;}
+
+
+
+.cart_checker{height:38px;width:38px;position:absolute;left:0px;top:50%;transform: translate(0%, -50%);-webkit-transform: translate(0%, -50%);}
+.cart_checker span{display:block;height:18px;width:18px;border:1px solid #999;box-sizing:border-box;border-radius:9px;margin:10px auto 10px 10px;}
+.cart_checkered span{border:1px solid #ff4c39;background:#ff4c39 url(http://site.meishij.net/p2/20161010/20161010214233_385.png) center /100% 100% no-repeat;}
+.cartitem_outofdate .cart_checker span{border:1px solid #f3f3f3;}
+
+
+.cart_item{padding:5px 10px 5px 38px;position:relative;}
+.cart_item .cart_link{height:110px;width:100%;display:block;padding-left:120px;box-sizing:border-box;position:relative;}
+.cart_item .cart_link:active{background:#f3f3f3;}
+.cart_item .cart_link .imgw{height:110px;width:110px;overflow:hidden;border-radius:2px;position:absolute;left:0px;top:0px;}
+.cart_item .cart_link .imgw img{display:block;width:100%;height:auto;position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
+.cart_item .cart_link .info{height:110px;width:100%;position:relative;}
+.cart_item .cart_link .info .t{font-size:16px;color:#333;line-height:21px;padding-top:2px;max-height:42px;overflow:hidden;display:block;}
+.cartitem_outofdate .cart_link .info .t{color:#999;}
+.cart_item .cart_link .info .gg{font-size:11px;color:#999;line-height:24px;height:24px;overflow:hidden;font-weight:100;}
+.cart_item .cart_link .info .price{height:24px;line-height:24px;position:absolute;left:0px;bottom:0px;font-size:18px;color:#ff4c39;}
+.cartitem_outofdate .cart_link .info .price{color:#999;}
+.cart_item .cart_link .info .prime{height:16px;line-height:16px;position:absolute;left:0px;bottom:24px;font-size:12px;color:#999;text-decoration:line-through;font-weight:100;}
+.cart_item .reamount{height:36px;width:84px;background:url(http://site.meishij.net/p2/20161010/20161010210256_467.png) center /100% 100% no-repeat;position:absolute;right:10px;bottom:0px;}
+.cart_item .reamount .n{height:36px;line-height:36px;text-align:center;font-size:16px;color:#333;text-align:center;display:block;width:100%;}
+.cart_item .reamount .reducebtn{height:36px;width:42px;position:absolute;left:0px;top:0px;display:block;}
+.cart_item .reamount .addbtn{height:36px;width:42px;position:absolute;right:0px;top:0px;display:block;}
+.cart_item .reamount a:active{background:rgba(0,0,0,0.1);}
+.cartitem_outofdate .reamount{opacity:0.3;}
+.cartitem_outofdate .reamount a:active{background:rgba(0,0,0,0);}
+.greyline10{width:100%;background:#f6f6f6;height:10px;}
+
+
+.cartitem  .c4{width:100%;position:relative;}
+.cartitem  .c4 .yf{height:32px;line-height:32px;font-size:12px;color:#333;padding-bottom:5px;margin-left:38px;}
+.cartitem  .c4 .yf .red{color:#ff4c39;font-size:14px;}
+.cartitem_outofdate .c4 .yf .red{color:#999;font-size:14px;}
+
+
+.cartitem  .c5{width:100%;position:relative;}
+.cartitem  .c5 .hd{line-height:18px;font-size:12px;color:#333;padding-bottom:5px;margin-left:38px;padding:14px 0px;position:relative;}
+.cartitem  .c5 .hd:before{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;top:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+
+.outofdate_title{width:100%;height:32px;line-height:32px;margin-top:20px;font-size:16px;color:#333;text-align:center;}
+
+
+
+
+.cart_bottom{width:100%;height:60px;}
+
+.cart_bottom_c{height:50px;width:100%;position:fixed;left:0px;bottom:0px;z-index:400;background:#fff;}
+.cart_bottom_c:before{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;top:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.checkall{height:50px;width:100px;position:absolute;left:0px;top:0px;line-height:50px;font-size:14px;color:#333;padding-left:36px;}
+.checkall .mask{display:block;height:50px;width:100px;position:absolute;left:0px;top:0px;z-index:100;}
+.cart_bottom_c .submitbtn{display:inline-block;height:50px;line-height:50px;font-size:16px;color:#fff;padding:0px 20px;float:right;background:#ff4c39;}
+.cart_bottom_c .submitbtn:active{background:#c90000;}
+.cart_bottom_c .submitbtn.disable{background:#aaa;}
+.cart_bottom_c .submitbtn.disable:active{background:#aaa;}
+.cart_bottom_c .heji{display:inline-block;height:50px;padding:0px 16px 0px 0px;float:right;text-align:right;}
+.cart_bottom_c .heji strong{display:inline-block;vertical-align:top;height:24px;line-height:24px;margin-top:5px;font-size:14px;color:#666;}
+.cart_bottom_c .heji strong em{color:#ff4c39;font-weight:100;}
+.cart_bottom_c .heji span{display:inline-block;vertical-align:top;height:16px;line-height:16px;font-size:12px;color:#666;}
+
+
+
+
+
+/*å‡‘å•é¡µ*/
+.coudan_info{width:100%;background:#fff;padding:12px 0px 12px;}
+.coudan_info p{text-align:center;font-size:14px;color:#333;line-height:22px;}
+.coudan_info span{text-align:center;font-size:14px;color:#ff4c39;line-height:22px;display:block;}
+
+
+
+
+
+
+/*æ™’å•é¡µ*/
+.post_shaidan_form{background:#fff;padding-bottom:40px;}
+.goodorbadw{height:70px;padding:10px 10px 10px 70px;box-sizing:border-box;width:100%;position:relative;}
+.goodorbadw .imgw{height:50px;width:50px;overflow:hidden;border-radius:2px;position:absolute;left:10px;top:10px;background:#fff;}
+.goodorbadw .imgw img{display:block;width:100%;height:auto;position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
+
+.gob_checker{height:50px;width:100%;font-size:0px;}
+.gob_checker .good{width:50%;display:inline-block;vertical-align:top;line-height:50px;color:#333;font-size:15px;text-align:center;}
+.gob_checker .good .icon{display:inline-block;vertical-align:top;height:50px;width:50px;background:url(http://site.meishij.net/p2/20161012/20161012103624_985.png) 0px -50px /50px 200px no-repeat;}
+.gob_checker .good.checked .icon{background-position:0px 0px;}
+.gob_checker .good:active{background:#f3f3f3;}
+
+.gob_checker .bad{width:50%;display:inline-block;vertical-align:top;line-height:50px;color:#333;font-size:15px;}
+.gob_checker .bad .icon{display:inline-block;vertical-align:top;height:50px;width:50px;background:url(http://site.meishij.net/p2/20161012/20161012103624_985.png) 0px -150px /50px 200px no-repeat;}
+.gob_checker .bad.checked .icon{background-position:0px -100px;}
+.gob_checker .bad:active{background:#f3f3f3;}
+
+.shaidan_textareaw{margin:0px 10px;}
+.shaidan_textarea{border:1px solid #e2e2e2;padding:10px 14px;box-sizing:border-box;display:block;width:100%;height:100px;font-size:14px;color:#333;border-radius:2px;font-weight:100;}
+
+
+.shaidan_imgs{width:100%;padding:0px 10px;box-sizing:border-box;overflow:hidden;}
+
+.shaidan_imgs{padding:20px 10px 10px;font-size:0px;}
+.shaidan_imgs li{width:82px;height:82px;box-sizing:border-box;display:inline-block;vertical-align:top;overflow:hidden;text-align:center;position:relative;margin:0px 10px 10px 0px;}
+.shaidan_imgs li .shaidan_addimgbtn{display:block;}
+.shaidan_imgs li .imgw{display:inline-block;vertical-align:top;background:#f3f3f3;position:relative;width:82px;height:82px;border-radius:2px;overflow:hidden;}
+.shaidan_imgs li .imgw img{display:block;width:100%;height:auto;position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);border-radius:2px;}
+
+.shaidan_imgs li input{height:100%;font-size:100%;position:absolute;right:0px;top:0px;opacity:0;}
+.shaidan_imgs li .removeimg{height:30px;width:30px;position:absolute;top:4px;right:4px;background:url(http://site.meishij.net/p2/20161012/20161012111233_250.png) center no-repeat;background-size:30px 30px;display:block;}
+
+.post_shaidan_form .submitw{margin:0px 10px;height:40px;}
+.post_shaidan_form .submitw .shaidan_submit{display:block;height:40px;border-radius:2px;background:#ff4c39;color:#fff;font-size:16px;text-align:center;line-height:40px;}
+.post_shaidan_form .submitw .shaidan_submit:active{background:#c90000;}
+
+
+
+/*ç¡®è®¤è®¢å•*/
+
+.qrdd_addressw{width:100%;background:#fff;padding:0.1px 0px;}
+.qrdd_addressw .noaddr_btn{display:block;margin:14px 10px;height:40px;line-height:40px;font-size:14px;color:#ff4c39;text-align:center;position:relative;border-radius:2px;overflow:hidden;}
+.qrdd_addressw .noaddr_btn:after{content:" ";border:1px solid #ff4c39;width:200%;height:200%;border-radius:4px;box-sizing:border-box;position:absolute;left:-50%;top:-50%;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.qrdd_addressw .noaddr_btn:active{background:#ff4c39;color:#fff;}
+
+.qrdd_addressw .addr_btn{display:block;background:#fefdf6;}
+.qrdd_addressw .addr_btn:active{background:#f3f3f3;}
+.addr_barimg{display:block;width:100%;height:4px;}
+
+.qrdd_addressshow{width:100%;padding:10px 0px;position:relative;}
+.qrdd_addressshow p{color:#333;font-size:14px;line-height:24px;margin:0px 10px;}
+.qrdd_addressshow p .addr{line-height:20px;display:inline-block;margin-top:4px;}
+.qrdd_addressshow .tel{color:#333;font-size:14px;line-height:24px;margin:0px 10px;position:absolute;right:0px;top:10px;display:block;}
+
+
+
+.qrdditem{width:100%;background:#fff;margin-top:10px;}
+.qrdditem .c1{width:100%;position:relative;}
+.qrdditem .c1 .shopn{display:inline-block;vertical-align:top;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;color:#333;padding-left:22px;box-sizing:border-box;line-height:40px;background:url(http://site.meishij.net/p2/20161010/20161010101426_191.png) 0px center /auto 100% no-repeat;margin-left:10px;}
+
+.qrdditem .c2{}
+.qrdd_item{padding:0px 10px 10px 10px;position:relative;}
+.qrdd_item .qrdd_link{height:110px;width:100%;display:block;padding-left:120px;box-sizing:border-box;position:relative;}
+.qrdd_item .qrdd_link:active{background:#f3f3f3;}
+.qrdd_item .qrdd_link .imgw{height:110px;width:110px;overflow:hidden;border-radius:2px;position:absolute;left:0px;top:0px;}
+.qrdd_item .qrdd_link .imgw img{display:block;width:100%;height:auto;position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);}
+.qrdd_item .qrdd_link .info{height:110px;width:100%;position:relative;}
+.qrdd_item .qrdd_link .info .t{font-size:16px;color:#333;line-height:21px;padding-top:2px;max-height:42px;overflow:hidden;display:block;}
+.qrdd_item .qrdd_link .info .gg{font-size:11px;color:#999;line-height:24px;height:24px;overflow:hidden;font-weight:100;}
+.qrdd_item .qrdd_link .info .price{height:24px;line-height:24px;position:absolute;left:0px;bottom:0px;font-size:18px;color:#ff4c39;}
+.qrdd_item .qrdd_link .info .prime{height:16px;line-height:16px;position:absolute;left:0px;bottom:24px;font-size:12px;color:#999;text-decoration:line-through;font-weight:100;display:block;}
+.qrdd_item .qrdd_link .info .an{height:24px;line-height:24px;position:absolute;right:0px;bottom:0px;font-size:12px;color:#999;text-align:right;font-weight:100;display:block;}
+
+
+
+
+.qrdditem .c3{background:#fff;padding:0px 10px;position:relative;}
+.qrdditem .c3 .t{line-height:22px;font-size:14px;padding:9px 0px;height:22px;position:absolute;left:10px;top:0px;}
+.qrdditem .c3 .c{line-height:22px;font-size:14px;padding:9px 0px;height:22px;text-align:right;}
+.qrdditem .c3 .c .red{color:#ff4c39;font-weight:100;}
+
+.qrdditem .c4{background:#fff;padding:0px 10px 0px 88px;position:relative;}
+.qrdditem .c4 .t{line-height:22px;font-size:14px;padding:9px 0px;height:22px;position:absolute;left:10px;top:0px;}
+.qrdditem .c4 .c{width:100%;padding:9px 0px;}
+.qrdditem .c4 .c input{font-size:14px;color:#333;border:0px;height:22px;line-height:22px;display:block;width:100%;font-weight:100;}
+
+
+.qrdd_bottom{height:70px;width:100%;}
+.qrdd_bottom_c{width:100%;height:50px;position:fixed;left:0px;bottom:0px;background:#fff;font-size:0px;}
+.qrdd_bottom_c:before{content:" ";width:200%;height:1px;background:#e2e2e2;position:absolute;left:-50%;top:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+
+.qrdd_bottom_c .pr{font-size:14px;display:inline-block;vertical-align:top;line-height:50px;height:50px;text-align:center;color:#333;width:60%;position:relative;}
+.qrdd_bottom_c .pr .red{color:#ff4c39;font-size:18px;}
+.qrdd_bottom_c .btn{font-size:17px;display:inline-block;vertical-align:top;line-height:50px;height:50px;text-align:center;color:#fff;background:#ff4c39;width:40%;position:relative;}
+.qrdd_bottom_c .btn:active{background:#c90000;}
+
+
+
+.checkaddrlist{width:100%;background:#fff;}
+.checkaddritem{width:100%;position:relative;}
+.checkaddritem .link{display:block;width:100%;padding:4px 10px;box-sizing:border-box;position:relative;}
+.checkaddritem .link:active{background:#f3f3f3;}
+.checkaddritem .link .n{font-size:14px;color:#333;line-height:32px;height:32px;}
+.checkaddritem .link .addrtxt{font-size:14px;color:#333;line-height:20px;}
+.checkaddritem .link .pn{font-size:14px;color:#333;line-height:32px;height:32px;position:absolute;right:10px;top:4px;}
+.checkaddritem .btnsw{width:100%;height:44px;text-align:right;padding:0px 0px;box-sizing:border-box;}
+.checkaddritem .btnsw .edit{height:44px;width:44px;background:url(http://site.meishij.net/p2/20161012/20161012153347_672.png) center /44px 44px no-repeat;display:inline-block;vertical-align:top;}
+.checkaddritem .btnsw .del{height:44px;width:44px;background:url(http://site.meishij.net/p2/20161012/20161012153347_983.png) center /44px 44px no-repeat;display:inline-block;vertical-align:top;}
+.checkaddritem .btnsw .edit:active{background-color:#f3f3f3;}
+.checkaddritem .btnsw .del:active{background-color:#f3f3f3;}
+
+
+
+.checkaddr_bottom{width:100%;height:50px;}
+.checkaddr_bottom_c{height:50px;width:100%;bottom:0px;left:0px;position:fixed;z-index:100;}
+.checkaddr_bottom_c a{background:#ff4c39;color:#fff;font-size:16px;text-align:center;line-height:50px;display:block;}
+.checkaddr_bottom_c a:active{background:#c90000;}
+
+
+.na_box{width:100%;background:#fff;padding-bottom:1px;}
+.na_box .c1{height:20px;line-height:20px;padding:10px 10px 10px 84px;position:relative;font-size:14px;}
+.na_box .c1.pl120{padding-left:120px;}
+.na_box .c1 .t{width:110px;position:absolute;left:10px;top:10px;height:20px;line-height:20px;color:#333;font-size:14px;}
+.na_box .c1 .c{width:100%;}
+.na_box .c1 .c input[type=text]{height:20px;line-height:20px;font-weight:100;color:#333;font-size:14px;display:block;width:100%;}
+.na_box .c1 .c .ssqcheckben{display:block;height:20px;line-height:20px;color:#a9a9a9;font-size:14px;margin-right:30px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.na_box .c1 .c .ssqcheckben.checked{color:#333;}
+
+.na_box .c1 .c .ssqcheckben:active{background:#f3f3f3;}
+.na_box .c1 .gomap{height:40px;width:35px;position:absolute;right:0px;top:0px;background:url(http://site.meishij.net/p2/20161012/20161012165309_796.png) right top /35px 40px no-repeat;}
+.na_box .c1 .gomap:active{background-color:rgba(0,0,0,0.1);}
+
+
+.na_box .submitw{margin:14px 10px;}
+.na_box .submitw .btn{display:block;height:40px;width:100%;background:#ff4c39;color:#fff;font-size:16px;font-weight:100;text-align:center;border-radius:2px;line-height:40px;}
+.na_box .submitw .btn:active{background:#c90000;}
+
+.addrcheckerbox{width:100%;height:100%;position:fixed;left:0px;top:0px;background:#fff;z-index:6000;display:none;}
+.addrcheckerbox .bar{height:40px;line-height:40px;margin-top:4px;font-size:0px;}
+.addrcheckerbox .bar strong{display:inline-block;vertical-align:top;height:36px;line-height:36px;border-top:2px solid transparent;border-bottom:2px solid transparent;margin:0px 20px;color:#333;font-size:14px;position:relative;z-index:10;}
+.addrcheckerbox .bar strong.current{color:#ff4c30;border-bottom:2px solid #ff4c39;}
+.addrcheckerbox .zonelist{overflow: hidden;overflow-y: auto;-webkit-overflow-scrolling: touch;}
+.addrcheckerbox .zonelist .zitem{height:40px;display:block;text-indent:10px;line-height:40px;color:#333;font-size:14px;}
+.addrcheckerbox .zonelist .zitem.checked{background:url(http://site.meishij.net/p2/20161010/20161010214233_385.png) 97% center /18px 18px no-repeat;color:#ff4c39;}
+
+.addrsearch_listw{width:100%;background:#fff;}
+.addrsearch_listw .nomes{text-align:center;color:#999;line-height:21px;font-size:14px;padding:100px 0px;}
+
+.ajax_addrsearch_listitem{}
+.ajax_addrsearch_listitem a{display:block;padding:10px ;}
+.ajax_addrsearch_listitem a:active{background:#f3f3f3;}
+.ajax_addrsearch_listitem a strong{display:block;line-height:23px;font-size:15px;color:#333;font-weight:100;}
+.ajax_addrsearch_listitem a em{display:block;line-height:20px;font-size:12px;color:#999;font-weight:100;}
+
+
+
+.dd_loginbox{width:100%;background:#fff;height:400px;transition:ease all 0.3s;-webkit-transition:ease all 0.3s;bottom:-100%;position:fixed;left:0px;z-index:501;}
+.dd_loginbox.show{bottom:0%;}
+.dd_loginbox .t{font-size:23px;color:#333;font-weight:400;text-align:center;height:80px;line-height:80px;}
+.dd_loginform{padding:0px 14px;}
+.dd_loginbox .inputw{height:44px;}
+.dd_loginbox .inputw input{height:24px;padding:10px 0px;line-height:24px;font-size:14px;color:#333;}
+.dd_loginbox .submitw{height:40px;margin-top:20px;}
+.dd_loginbox .submitw a{color:#fff;height:40px;width:100%;border-radius:4px;text-align:center;line-height:40px;background:#ff4c39;display:block;font-size:16px;}
+.dd_loginbox .submitw a:active{background:#c90000;}
+.dd_loginbox .c1{height:42px;line-height:42px;;position:relative;}
+.dd_loginbox .c1 .lk1{color:#666;font-size:14px;display:inline-block;vertical-align:top;padding:0px 14px}
+.dd_loginbox .c1 .lk2{color:#ff4c38;font-size:14px;position:absolute;right:0px;top:0px;padding:0px 14px}
+.dd_loginbox .c1 a:hover{background:#f3f3f3;}
+
+.dd_loginbox .dsfbox{text-align:center;margin-top:20px;}
+.dd_loginbox .dsfbox .t{font-size:12px;color:#999;display:inline-block;vertical-align:top;background:#fff;padding:0px 22px;position:relative;z-index:10;height:14px;line-height:14px;}
+.dd_loginbox .dsfbox .t:before{height:1px;width:160%;background:#e2e2e2;left:-110%;top:7px;display:block;content:" ";position:absolute;font-size:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.dd_loginbox .dsfbox .t:after{height:1px;width:160%;background:#e2e2e2;right:-110%;top:7px;display:block;content:" ";position:absolute;font-size:0px;transform:scale(0.5);-webkit-transform:scale(0.5);}
+.dd_loginbox .dsfbtns{height:50px;margin-top:14px;text-align:center;}
+.dd_loginbox .dsfbtns a{display:inline-block;vertical-align:top;height:50px;width:50px;margin:0px 26px;}
+.dd_loginbox .dsfbtns a img{display:block;width:100%;}
+
+
+
+/*ç‰©æµä¿¡æ¯*/
+
+.wuliu_top{height:60px;width:100%;padding:10px;box-sizing:border-box;background:#fff;margin-top:10px;}
+.wuliu_top img{display:block;height:40px;width:40px;float:left;}
+.wuliu_top strong{font-size:16px;color:#333;line-height:22px;padding-left:10px;}
+.wuliu_top em{font-size:13px;color:#ff4c39;line-height:18px;padding-left:10px;}
+
+.wuliupage_info{background:#fff;margin-top:10px;}
+.wuliupage_info h3{height:44px;line-height:44px;border-bottom:1px solid #f5f5f5;font-size:16px;color:#000;text-indent:16px;}
+.wuliu_step{padding-left:46px;}
+.wuliu_step_item{padding:0px 0px 10px;position:relative;}
+.wuliu_step_item:last-child{border-bottom:0px;}
+.wuliu_step_item .p{line-height:20px;padding:16px 16px 6px 0px;font-size:16px;color:#666;border-top:1px solid #f5f5f5;}
+.wuliu_step_item .p.first{border-top:0px;}
+.wuliu_step_item .p.red{color:#ff4c39;}
+.wuliu_step_item .time{font-size:14px;color:#999;line-height:20px;}
+
+.wuliu_step_item .dot{position:absolute;height:8px;width:8px;border-radius:4px;left:-27px;top:50%;margin-top:-4px;background:#ddd;overflow:hidden;z-index:20;}
+.wuliu_step_item .dot.first{height:10px;width:10px;border-radius:5px;left:-28px;top:50%;margin-top:-5px;background:#ff4c39;}
+.wuliu_step_item .line{height:100%;width:2px;background:#ddd;position:absolute;left:-24px;top:0px;z-index:10;}
+.wuliu_step_item .line.first{height:50%;top:50%;}
+
+
+
+body{}

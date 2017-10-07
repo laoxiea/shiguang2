@@ -1,0 +1,28 @@
+<div class="bar bar-header bar-baseColor">
+    <button class="button-icon item-icon-left button button-small button-balanced ion-chevron-left" ng-click="jump('mUserCenter1')"></button>
+    <div class="h1 title">个人中心</div>
+</div>
+<ion-content class="has-header has-footer">
+    <div class="list list-inset">
+        <h4 class="marginleft">更换图像</h4>
+        <p class="text-center"><img src="image/discuss/4.jpg" class="perphoto"/></p>
+        <h4 class="marginleft">更换昵称</h4>
+        <label class="item item-input">
+            <input type="text" placeholder="{{info.uname}}" value={{info.uname}} />
+        </label>
+        <h4 class="marginleft">收货人</h4>
+        <label class="item item-input">
+            <input type="text"  value={{info.uname}}>
+        </label>
+        <h4 class="marginleft">联系电话</h4>
+        <label class="item item-input">
+            <input type="text"  value={{info.uphone}}>
+        </label>
+        <h4 class="marginleft">收货地址</h4>
+        <label class="item item-input">
+            <textarea name="" id="" cols="30" rows="3" value={{info.uaddr}}></textarea>
+        </label>
+        <button class="button button-base button-block" ng-click="jump('mUserCenter1')">保存修改</button>
+    </div>
+
+</ion-content>

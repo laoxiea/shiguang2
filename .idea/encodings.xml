@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/css/ionic.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/fonts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/image/find" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/js/ionic.bundle.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/js/meishijie.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/meishijie.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/tpl/discuss.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/tpl/find.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/tpl/include/usercenter/modal.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/tpl/include/usercenter/userCenter1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/tpl/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/tpl/store.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/public/tpl/userCenter.html" charset="UTF-8" />
+  </component>
+</project>

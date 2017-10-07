@@ -1,0 +1,51 @@
+<!--<ion-header-bar class="bar-stable">-->
+    <div class="bar bar-header bar-baseColor">
+        <div class="h1 title">菜谱</div>
+        <button class="button button-clear button-positive "><b class="plus">＋</b></button>
+    </div>
+<!--</ion-header-bar>-->
+<ion-content class="has-header has-footer">
+    <div class="list list-inset">
+        <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input ng-model="listInput.search" type="text" placeholder="请输入关键字">
+        </label>
+    </div>
+    <div class="list list-inset">
+        <div class="row text-center cursor">
+            <div class="col" ui-sref="mList">综合</div>
+            <div class="col" ui-sref="mList1">家常菜</div>
+            <div class="col" ui-sref="mList2">川菜</div>
+            <div class="col" ui-sref="mList3">粤菜</div>
+            <div class="col" ui-sref="mList4">湘菜</div>
+        </div>
+    </div>
+    <div ui-view>
+
+        <div class="list list-inset">
+            <button ng-hide="isExist" class="button button-full button-clear button-dark">没有搜索结果！</button>
+            <a ng-show="isExist" class="item item-thumbnail-list" ui-sref="mListDetail({did:tmp.did})" ng-repeat="tmp in listall">
+                <img ng-src="{{tmp.dpic}}">
+                <h2>{{tmp.dname}}</h2>
+                <p>{{tmp.dinfo}}</p>
+            </a>
+        </div>
+
+        <!--<a class="item item-thumbnail-list" href="#">-->
+            <!--<img src="image/list/1.jpg">-->
+            <!--<h2>四川凉面</h2>-->
+            <!--<p>煮 香辣味 初中水平 <5分钟</p>-->
+        <!--</a>-->
+        <!--<a class="item item-thumbnail-list" href="#">-->
+            <!--<img src="image/list/4.jpg">-->
+            <!--<h2>黑椒牛排</h2>-->
+            <!--<p>煎 黑椒味 初中水平 <10分钟</p>-->
+        <!--</a>-->
+        <!--<a class="item item-thumbnail-list" href="#">-->
+            <!--<img src="image/list/3.jpg">-->
+            <!--<h2>梅菜扣肉</h2>-->
+            <!--<p>蒸 咸鲜味 初中水平 <90分钟</p>-->
+        <!--</a>-->
+    </div>
+
+</ion-content>

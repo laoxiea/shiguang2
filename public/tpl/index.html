@@ -1,0 +1,81 @@
+<ion-header-bar align-title="center" class="bar-baseColor">
+    <p class="title">食光社</p>
+    <button class=" button  ion-search button-balanced button-icon" ng-click="jump('mIndexSearch')"></button>
+</ion-header-bar>
+<ion-content class="has-footer has-header">
+    <div>
+        <!--轮播-->
+        <ion-slides class="slider-box" options="options" slider="data.slider">
+            <ion-slide-page ng-repeat="tmp in slider">
+                <img class="box" ng-src="{{tmp.ppic}}" ng-click="jump('mStoreDetail',{pid:tmp.pid})"/>
+            </ion-slide-page>
+            <!--<ion-slide-page>-->
+                <!--<img class="box" src="image/store/2_lg.jpg"/>-->
+            <!--</ion-slide-page>-->
+            <!--<ion-slide-page>-->
+                <!--<img class="box" src="image/store/3_lg.jpg"/>-->
+            <!--</ion-slide-page>-->
+        </ion-slides>
+        <div class="row row-center text-center" id="addTitle">
+            <span class="col">
+                <a class="button button-icon ion-ios-book icon-left">发菜谱</a>
+                </span>
+            <span class="col">
+                <a class="button button-icon ion-chatbubble-working icon-left">范一下</a>
+            </span>
+        </div>
+
+    </div>
+    <div class="row row-center fanfan" ng-click="jump('mDiscuss')">
+        <span class="col">
+            <b class="mainColor">|</b>
+            饭范
+        </span>
+        <span class="text-right col font">&gt;</span>
+    </div>
+    <div class="marginBottom" >
+        <div class="height marginBottom" ng-repeat="tem in discussList" ng-click="jump('mToDiscuss',{tid:tem.tid})">
+            <img ng-src="{{tem.tpic_lg}}" class="full-image"/>
+            <p class="from">来自：雨夕之家</p>
+        </div>
+        <!--<div class="height marginBottom">-->
+            <!--<img src="image/discuss/2- (9)l.jpg" class="full-image "/>-->
+            <!--<p class="from">来自：雨夕之家</p>-->
+        <!--</div>-->
+    </div>
+    <div class="row row-center" ng-click="jump('mStore')">
+        <span class="col">
+            <b class="mainColor">|</b>
+            强圈围观
+        </span>
+        <span class="text-right col font">&gt;</span>
+    </div>
+    <div ng-click="jump('mStoreDetail')">
+        <div class="height marginBottom" ng-repeat="tmp in storeList" ng-click="jump('mStoreDetail',{pid:tmp.pid})">
+            <img ng-src="{{tmp.ppic}}" class="full-image imgPosition"/>
+            <p class="from">{{tmp.pname}}</p>
+        </div>
+        <!--<div class="height marginBottom">-->
+            <!--<img src="image/store/1_lg.jpg" class="full-image imgPosition"/>-->
+            <!--<p class="from">【杂粮豆浆豆】</p>-->
+        <!--</div>-->
+    </div>
+    <div class="row row-center" ng-click="jump('mList')">
+        <span class="col">
+            <b class="mainColor">|</b>
+            菜谱
+        </span>
+        <span class="text-right col font">&gt;</span>
+    </div>
+    <div ng-click="jump('mListDetail')">
+        <div class="height marginBottom" ng-repeat="tmp in indexList" ng-click="jump('mListDetail',{did:tmp.did})">
+            <img ng-src="{{tmp.dpic}}" class="full-image imgPosition"/>
+            <p class="from">{{tmp.dname}}</p>
+        </div>
+        <!--<div class="height marginBottom">-->
+            <!--<img src="image/list/2.jpg" class="full-image imgPosition"/>-->
+            <!--<p class="from">【可乐鸡翅】</p>-->
+        <!--</div>-->
+    </div>
+
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header-bar align-title="center" class="bar-baseColor">
+    <button class="button-icon item-icon-left  button button-small button-balanced ion-chevron-left" ng-click="jump('mList')"></button>
+    <p class="title">{{listDetail.dname}}</p>
+</ion-header-bar>
+<ion-content class="has-header white">
+    <div>
+        <img ng-src="{{listDetail.dpic}}" class="full-image"/>
+        <p class="text-center fanfan marginBtm0"><img src="image/list/user.jpg" class="borderRadius"/></p>
+        <p class="text-center userImgFont brown">yaya</p>
+        <p class="item-text-wrap gray padding12 fontWeight500 borderBottom">{{listDetail.dinfo}}</p>
+    </div>
+    <div>
+        <h3 class="padding12"><b>评分</b></h3>
+        <p class="row">
+            <span class="col gray font18 padding12">烧</span>
+            <span class="col gray font18 padding12">家常味</span>
+        </p>
+        <p class="font18 gray padding12">&lt;30分钟</p>
+        <h3 class="padding12" ><b>配料</b></h3>
+        <p class="red font18 padding12">{{listDetail.dmaterial}}</p>
+
+    </div>
+    <div>
+        <h3 class="text-center">{{listDetail.dname}}步骤1</h3>
+        <p >
+            <img class="full-image" ng-src="{{listDetail.dstep1_p}}"/>
+        </p>
+        <p class="gray  padding12 fontWeight500">{{listDetail.dstep1}}</p>
+
+        <h3 class="text-center">步骤2</h3>
+        <p >
+            <img class="full-image" ng-src="{{listDetail.dstep2_p}}"/>
+        </p>
+        <p class="gray  padding12 fontWeight500">{{listDetail.dstep2}}</p>
+        <h3 class="text-center">步骤3</h3>
+        <p >
+            <img class="full-image" ng-src="{{listDetail.dstep3_p}}"/>
+        </p>
+        <p class="gray  padding12 fontWeight500">{{listDetail.dstep3}}</p>
+        <h3 class="text-center">步骤4</h3>
+        <p >
+            <img ng-src="{{listDetail.dstep4_p}}"/>
+        </p>
+        <p class="gray  padding12 fontWeight500">{{listDetail.dstep4}}</p>
+        <h3 class="text-center">{{listDetail.dname}}成品图</h3>
+        <img class="full-image" ng-src="{{listDetail.dpic}}"/>
+    </div>
+</ion-content>

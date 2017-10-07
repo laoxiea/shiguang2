@@ -1,0 +1,76 @@
+
+<div class="bar bar-header item-input-inset bar-baseColor">
+    <label class="item-input-wrapper white">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input ng-model="storeInput.search" type="search" placeholder="输入商品名称查找">
+    </label>
+    <button ui-sref="mCart" class="button-icon ion-ios-cart item-icon-right button button-small button-balanced"></button>
+</div>
+<ion-content id="find2" class="has-footer has-header">
+    <!--<div class="card">-->
+
+    <!--</div>-->
+    <button ng-hide="isExistp" class="button button-full button-clear button-dark">没有搜索结果！</button>
+<div ng-hide="isExist" class="list list-inset " ng-if="isExistdiv">
+
+    <a class="item item-thumbnail-left" ng-click="jump('mStoreDetail',{pid:tmp.pid})" ng-repeat="tmp in storeSearch">
+        <img ng-src={{tmp.ppic}}>
+        <h2>{{tmp.pname}}</h2>
+        <p>{{tmp.pinfo}}</p>
+        <h3 class="text-right"><b class="red">￥{{tmp.pprice}}</b></h3>
+    </a>
+</div>
+<div ng-show="isExist">
+    <div class="list list-inset ">
+        <h3 class="item item-divider ">粮油
+            <i class=" ion-chevron-right item-icon-right"></i>
+        </h3>
+        <a class="item item-thumbnail-left" ng-click="jump('mStoreDetail',{pid:tmp.pid})" ng-repeat="tmp in product1">
+            <img ng-src={{tmp.ppic}}>
+            <h2>{{tmp.pname}}</h2>
+            <p>{{tmp.pinfo}}</p>
+            <h3 class="text-right"><b class="red">￥{{tmp.pprice}}</b></h3>
+        </a>
+        <!--<a class="item item-thumbnail-left">-->
+            <!--<img src="image/store/1.jpg"/>-->
+            <!--<h2>杂粮豆浆豆</h2>-->
+            <!--<p>颗粒饱满，膳食纤维好消化</p>-->
+            <!--<h3>￥3.5</h3>-->
+        <!--</a>-->
+    </div>
+    <div class="list list-inset">
+        <h3 class="item item-divider ">烘焙
+            <i class=" ion-chevron-right item-icon-right"></i>
+        </h3>
+        <a class="item item-thumbnail-left" ng-click="jump('mStoreDetail',{pid:tmp.pid})" ng-repeat="tmp in product2">
+            <img ng-src={{tmp.ppic}}>
+            <h2>{{tmp.pname}}</h2>
+            <p>{{tmp.pinfo}}</p>
+            <h3 class="text-right"><b class="red">￥{{tmp.pprice}}</b></h3>
+        </a>
+        <!--<a class="item item-thumbnail-left">-->
+            <!--<img src="image/store/2.jpg"/>-->
+            <!--<h2>百钻蛋挞皮20g*30个</h2>-->
+            <!--<p>层层起酥，香脆不碎烘焙必备</p>-->
+            <!--<h3 class="text-right"><b class="red">￥19.9</b></h3>-->
+        <!--</a>-->
+    </div>
+    <div class="list list-inset">
+        <h3 class="item item-divider ">水果
+            <i class=" ion-chevron-right item-icon-right"></i>
+        </h3>
+        <a class="item item-thumbnail-left" ng-click="jump('mStoreDetail',{pid:tmp.pid})" ng-repeat="tmp in product3">
+            <img ng-src={{tmp.ppic}}>
+            <h2>{{tmp.pname}}</h2>
+            <p>{{tmp.pinfo}}</p>
+            <h3 class="text-right"><b class="red">￥{{tmp.pprice}}</b></h3>
+        </a>
+        <!--<a class="item item-thumbnail-left">-->
+            <!--<img src="image/store/3.jpg"/>-->
+            <!--<h2>新鲜脐橙5斤装</h2>-->
+            <!--<p>果肉饱满 ，汁如滔滔江水</p>-->
+            <!--<h3 class="text-right"><b class="red">￥48</b></h3>-->
+        <!--</a>-->
+    </div>
+</div>
+</ion-content>

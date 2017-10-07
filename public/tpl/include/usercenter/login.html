@@ -1,0 +1,12 @@
+<div class="list">
+    <label class="item item-input">
+        <span class="input-label">用户名</span>
+        <input type="text" ng-model="uname">
+    </label>
+    <label class="item item-input">
+        <span class="input-label">密码</span>
+        <input type="password" ng-model="upwd">
+    </label>
+    <button class="button button-block button-base" ng-click="login()">登录</button>
+    <button class="button button-clear button-block button-dark" ng-show="isLog">账号或密码错误</button>
+</div>

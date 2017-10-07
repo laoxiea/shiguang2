@@ -1,0 +1,22 @@
+<div class="bar bar-header item-input-inset bar-baseColor">
+    <label class="item-input-wrapper white">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="请输入..." ng-model="myInput.search">
+    </label>
+    <button class="button button-clear ftwhite" ng-click="jump('mIndex')">
+        取消
+    </button>
+</div>
+<ion-content class="bar-stable has-header">
+    <!--<a class="item item-thumbnail-left" href="#">-->
+        <!--<img src="image/list/1.jpg">-->
+        <!--<h2>四川凉面</h2>-->
+        <!--<p>煮 香辣味 初中水平 <5分钟</p>-->
+    <!--</a>-->
+    <button ng-hide="isExist" class="button button-full button-clear button-dark">没有搜索结果！</button>
+    <a ng-show="isExist" class="item item-thumbnail-left" ng-repeat="tem in indexSearch" ng-click="jump('mListDetail',{did:tem.did})" >
+    <img ng-src="{{tem.dpic}}">
+    <h2>{{tem.dname}}</h2>
+    <p>{{tem.dinfo}}</p>
+    </a>
+</ion-content>

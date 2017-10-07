@@ -1,0 +1,27 @@
+<div class="bar bar-header  bar-baseColor">
+    <button class="button-icon item-icon-left  button button-small button-balanced ion-chevron-left" ng-click="jump('mStore')"></button>
+    <p class="title">{{storeDetail.pname}}</p>
+    <button ui-sref="mCart" class="button-icon ion-ios-cart item-icon-right button button-small button-balanced"></button>
+</div>
+<ion-content class="has-header has-footer">
+    <div class="list list-inset card">
+        <div class="item item-body ">
+            <img ng-src="{{storeDetail.ppic}}" class=" full-image "/>
+            <h3 class=" item-text-wrap ">{{storeDetail.pstandard}}</h3>
+            <p class=" item-text-wrap">{{storeDetail.pinfo}}</p>
+            <p><b class="red">￥{{storeDetail.pprice}}</b></p>
+        </div>
+        <div class="list list-inset">
+            <img ng-src="{{storeDetail.ppic1}}" class=" full-image "/>
+            <img ng-src="{{storeDetail.ppic2}}" class=" full-image "/>
+            <img ng-src="{{storeDetail.ppic3}}" class=" full-image " />
+            <img ng-src="{{storeDetail.ppic4}}" class=" full-image " />
+            <img ng-src="{{storeDetail.ppic5}}" class=" full-image "/>
+        </div>
+
+        <p class="item item-divider">
+            <button class="button button-calm flr">添加到购物车</button>
+            <button class="button button-assertive flr" ng-click="jump('mStore')">我再看看</button>
+        </p>
+    </div>
+</ion-content>

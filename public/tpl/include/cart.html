@@ -1,0 +1,41 @@
+<div class="bar bar-header bar-baseColor">
+    <button class="button-icon item-icon-left button button-small button-balanced ion-chevron-left" ng-click="jump('mUserCenter1')"></button>
+    <div class="h1 title">菜篮子</div>
+    <button class="button button-clear ftwhite" ng-click="edit()">
+        {{content}}
+    </button>
+</div>
+<ion-content class="has-footer has-header">
+    <div class="list list-inset " >
+        <div class="item">
+            <div class="row row-center">
+                <div class="col"><img src="image/product/5.jpg" width="120px"  height="90px"/></div>
+                <div class="col" ng-show="isEdit">
+                    <p>秘制卤肉香料包</p>
+                    <p>6.8* <span>3</span></p>
+                </div>
+                <div  ng-hide="isEdit" class="col">
+                    <button>-</button>
+                    <span >3</span>
+                    <button >+</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row row-center">
+                <div class="col"><img src="image/product/5.jpg" width="120px"  height="90px"/></div>
+                <div class="col" ng-show="isEdit">
+                    <p>秘制卤肉香料包</p>
+                    <p>6.8* <span>3</span></p>
+                </div>
+                <div  ng-hide="isEdit" class="col">
+                    <button>-</button>
+                    <span >3</span>
+                    <button >+</button>
+                </div>
+            </div>
+        </div>
+        <p class=" text-right item "><span style="vertical-align: middle" class="fanfan marginRight">合计：30</span>
+            <button style="vertical-align: middle" class="button button-base marginleft">我要下单</button></p>
+    </div>
+</ion-content>

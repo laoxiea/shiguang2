@@ -1,0 +1,43 @@
+<div class="bar bar-header bar-baseColor">
+    <p class="title h1">饭范</p>
+</div>
+<ion-content class="has-footer has-header">
+    <div id="list">
+        <div class=" white" ng-repeat="tmp in talk track by $index">
+            <a class="item item-avatar">
+                <img ng-src="image/discuss/4.jpg"/>
+                <p>雨夕之家</p>
+                <p><span>{{tmp.ttime|date:"yy-mm-dd hh:mm:ss"}}</span></p>
+            </a>
+            <p class="item-text-wrap fanfan">{{tmp.tinfo}}</p>
+            <p class="row">
+                <img ng-src={{tmp.tpic1}} class="distance5 "/>
+                <img ng-src={{tmp.tpic2}} class="distance5  "/>
+                <img ng-src={{tmp.tpic3}} class="distance5  "/>
+            </p>
+            <p class="row">
+                <img ng-src={{tmp.tpic4}} class="distance5 "/>
+                <img ng-src={{tmp.tpic5}} class="distance5 "/>
+                <img ng-src={{tmp.tpic6}} class="distance5 "/>
+            </p>
+        </div>
+        <!--<div class="white">-->
+            <!--<a class="item item-avatar">-->
+                <!--<img src="image/discuss/4.jpg"/>-->
+                <!--<p>雨夕之家</p>-->
+                <!--<p><span>2017-07-26</span></p>-->
+            <!--</a>-->
+            <!--<p class="item-text-wrap fanfan">保留一颗感恩的心，它不仅让你怜惜一沙一石、一草一枝，还会让你淡漠某种无形的压力，...</p>-->
+            <!--<p class="row">-->
+                <!--<img src="image/discuss/2- (8).jpg" class="col "/>-->
+                <!--<img src="image/discuss/2- (9).jpg" class="col  "/>-->
+                <!--<img src="image/discuss/2- (10).jpg" class="col  "/>-->
+            <!--</p>-->
+            <!--<p class="row">-->
+                <!--<img src="image/discuss/2- (11).jpg" class="col "/>-->
+                <!--<img src="image/discuss/2- (12).jpg" class="col "/>-->
+                <!--<img src="image/discuss/2- (13).jpg" class="col "/>-->
+            <!--</p>-->
+        <!--</div>-->
+    </div>
+</ion-content>

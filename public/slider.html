@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="meishijieApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="js/ionic.bundle.js"></script>
+    <link rel="stylesheet" href="css/ionic.css"/>
+    <title></title>
+    <style>
+        .slider-box {
+            height: 500px;
+        }
+        .slider-box .box {
+            width: 100%;
+            height: 100%;
+        }
+        .yellow {
+            background: #FFF68F;
+        }
+        .blue {
+            background: #1E90FF;
+        }
+        .pink {
+            background: #FF6A6A;
+        }
+    </style>
+</head>
+<body ng-controller="SliderCtrl">
+<ion-view view-title="图片轮播">
+    <ion-content class="padding" scroll="false">
+        <ion-slides class="slider-box" options="options" slider="data.slider">
+            <ion-slide-page>
+                <div class="box blue"><img src="image/discuss/1- (1).jpg" alt=""/></div>
+            </ion-slide-page>
+            <ion-slide-page>
+                <div class="box yellow"><img src="image/discuss/1- (1).jpg" alt=""/></div>
+            </ion-slide-page>
+            <ion-slide-page>
+                <div class="box pink"><img src="image/discuss/1- (1).jpg" alt=""/></div>
+            </ion-slide-page>
+        </ion-slides>
+    </ion-content>
+</ion-view>
+<script>
+    var app=angular.module('meishijieApp',['ionic']);
+    app.config(function($stateProvider){
+        $stateProvider.state('slider', {url:'/slider',views: {'': {templateUrl:'slider.html', controller: 'SliderCtrl'}}
+        })
+    })
+    app.controller('SliderCtrl', function($scope) {
+        $scope.settings = {
+            enableFriends: true
+        };
+    })
+</script>
+</body>
+</html>
